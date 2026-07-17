@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #1a2e1a;
+  --forest: #0d2818;
+  --forest-light: #1a3d2e;
+  --emerald: #059669;
+  --emerald-light: #10b981;
+  --lime: #84cc16;
+  --lime-light: #a3e635;
+  --charcoal: #1c1c1e;
+  --charcoal-light: #2c2c2e;
+  --off-white: #f5f5f0;
+  --gray-light: #e8e8e3;
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-forest: var(--forest);
+  --color-forest-light: var(--forest-light);
+  --color-emerald: var(--emerald);
+  --color-emerald-light: var(--emerald-light);
+  --color-lime: var(--lime);
+  --color-lime-light: var(--lime-light);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --color-off-white: var(--off-white);
+  --color-gray-light: var(--gray-light);
+  --color-glass: var(--glass);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-syne);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--emerald);
+  color: white;
+}
+
+.font-display {
+  font-family: var(--font-syne), system-ui, sans-serif;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-dark {
+  background: rgba(13, 40, 24, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--emerald-light) 0%, var(--lime) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-emerald {
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.25);
+}
+
+.section-padding {
+  padding: clamp(4rem, 10vw, 8rem) clamp(1.25rem, 5vw, 3rem);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--emerald);
+  border-radius: 3px;
+}
+
+/* Split text animation helper */
+.split-char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Mesh pattern for hero fallback */
+.mesh-pattern {
+  background-image:
+    linear-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Pulse animation for WhatsApp */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+/* Gradient animated background */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    -45deg,
+    var(--forest),
+    var(--forest-light),
+    var(--emerald),
+    var(--charcoal)
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Magnetic button cursor area */
+@media (pointer: fine) {
+  .cursor-none-custom {
+    cursor: none;
+  }
+}
