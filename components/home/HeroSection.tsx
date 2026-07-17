@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -49,14 +49,13 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
     },
   },
   exit: {
@@ -68,7 +67,7 @@ const itemVariants = {
   },
 };
 
-const imageCardVariants = {
+const imageCardVariants: Variants = {
   hidden: { opacity: 0, scale: 0.92, rotate: -2 },
   visible: {
     opacity: 1,
@@ -76,7 +75,6 @@ const imageCardVariants = {
     rotate: 0,
     transition: {
       duration: 0.8,
-      ease: "easeOut",
     },
   },
   exit: {
@@ -95,7 +93,7 @@ export default function HeroSection() {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const autoPlayRef = useRef<NodeJS.Timeout>();
+  const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // GSAP animations
   useIsomorphicLayoutEffect(() => {
@@ -139,13 +137,13 @@ export default function HeroSection() {
     startAutoPlay();
 
     return () => {
-      if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+      if (autoPlayRef.current !== null) clearInterval(autoPlayRef.current);
     };
   }, []);
 
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
-    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    if (autoPlayRef.current !== null) clearInterval(autoPlayRef.current);
   };
 
   const activeSlide = SLIDER_CONTENT[currentSlide];

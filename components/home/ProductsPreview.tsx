@@ -44,13 +44,12 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
 };
 
 export default function ProductPreview() {
-  const sectionRef = useRef<HTMLSection>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   const imageContainerRef = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {

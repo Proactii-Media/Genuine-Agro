@@ -17,7 +17,6 @@ const images = [
   "/agri.png",
   "/products/50-tape-net1.jpeg",
   "/products/50-tape-net2.jpeg",
-  ,
 ];
 
 export default function TapeNet50Page() {

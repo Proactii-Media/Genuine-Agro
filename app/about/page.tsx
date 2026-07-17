@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -73,7 +73,8 @@ const WHY_CHOOSE = [
       "Dedicated customer support to assist you even after your purchase.",
   },
 ];
-const containerVariants = {
+
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -84,8 +85,11 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
   visible: {
     opacity: 1,
     y: 0,
@@ -97,8 +101,8 @@ const itemVariants = {
 };
 
 export default function AboutPage() {
-  const heroRef = useRef<HTMLSection>(null);
-  const featuresRef = useRef<HTMLSection>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const featuresRef = useRef<HTMLElement>(null);
 
   useIsomorphicLayoutEffect(() => {
     if (!heroRef.current) return;

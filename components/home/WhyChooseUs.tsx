@@ -66,7 +66,6 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
 };
@@ -78,7 +77,6 @@ const cardVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
     },
   },
   hover: {
@@ -90,7 +88,7 @@ const cardVariants = {
 };
 
 export default function WhyChooseUs() {
-  const sectionRef = useRef<HTMLSection>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {
     if (!sectionRef.current) return;
@@ -101,11 +99,11 @@ export default function WhyChooseUs() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
-          stagger: 0.1,
         },
         opacity: 0,
         y: 30,
         duration: 0.6,
+        stagger: 0.1,
       });
     }, sectionRef);
 
@@ -117,7 +115,6 @@ export default function WhyChooseUs() {
       ref={sectionRef}
       className="relative overflow-hidden bg-white py-14 lg:py-16"
     >
-      {/* Top Divider */}
       {/* Top Divider */}
       <div className="absolute top-0 left-1/2 h-px w-[92%] -translate-x-1/2 bg-gradient-to-r from-transparent via-[#a4cc2e]/30 to-tran0 left-0 h-px w-full bg-gray-200/70" />
       {/* Accent Blobs */}
