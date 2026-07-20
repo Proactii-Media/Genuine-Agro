@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Check, Zap, Shield, Leaf, TrendingUp, Award } from "lucide-react";
 
 const WHY_CHOOSE_DATA = [
@@ -42,7 +42,7 @@ const WHY_CHOOSE_DATA = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: {
@@ -51,7 +51,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 40,
