@@ -9,7 +9,7 @@ export default function AboutSection() {
     <section
       className="relative overflow-hidden bg-cover bg-center py-24 lg:py-32"
       style={{
-        backgroundImage: "url('/agri3.jpg')",
+        backgroundImage: "url('/constrution.png')",
       }}
     >
       {/* Overlay */}

@@ -87,24 +87,6 @@ export default function TapeNet90Page() {
                 </button>
               </div>
 
-              {/* Price */}
-              <div className="mt-6 rounded-2xl bg-[#f8fbf2] p-5">
-                <div className="flex items-end gap-2">
-                  <h2 className="text-3xl font-bold text-[#0B3A21]">
-                    ₹10 - ₹30
-                  </h2>
-
-                  <span className="pb-1 text-sm text-neutral-500">
-                    / Square Meter
-                  </span>
-                </div>
-
-                <p className="mt-2 text-base font-semibold text-neutral-800">
-                  MOQ :
-                  <span className="ml-2 text-[#0B3A21]">5000 Square Meter</span>
-                </p>
-              </div>
-
               {/* Quantity */}
               <div className="mt-6 flex flex-wrap gap-3">
                 <input

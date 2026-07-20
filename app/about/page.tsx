@@ -133,14 +133,14 @@ export default function AboutPage() {
         {/* Background */}
         <div className="absolute inset-0">
           <Image
-            src="/agri2.jpg"
+            src="/construction2.png"
             alt="About Genuine Agro"
             fill
             priority
             className="object-cover"
             quality={90}
           />
-          <div className="absolute inset-0 bg-white/20" />
+          <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-transparent to-transparent" />
         </div>
 
@@ -157,7 +157,7 @@ export default function AboutPage() {
               initial={{ width: 0 }}
               animate={{ width: 80 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="h-1.5 bg-gradient-to-r from-[#a4cc2e] to-[#ffb800]"
+              className="h-1.5 bg-gradient-to-r from-[#0B3A21] to-white"
             />
 
             {/* Badge */}
@@ -165,10 +165,10 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#a4cc2e]/30 bg-[#a4cc2e]/10 px-4 py-2 w-fit"
+              className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-[#0B3A21]/10 px-4 py-2 w-fit"
             >
-              <span className="h-2 w-2 rounded-full bg-[#a4cc2e]" />
-              <span className="text-sm font-semibold text-[#a4cc2e] uppercase tracking-wider">
+              <span className="h-2 w-2 rounded-full bg-white" />
+              <span className="text-sm font-semibold text-white uppercase tracking-wider">
                 About Genuine Agro
               </span>
             </motion.div>
@@ -217,7 +217,7 @@ export default function AboutPage() {
               <div className="relative overflow-hidden rounded-3xl border border-[#a4cc2e]/20 bg-gradient-to-br from-[#a4cc2e]/10 to-[#ffb800]/5 p-1 shadow-2xl">
                 <div className="relative aspect-square overflow-hidden rounded-[26px]">
                   <Image
-                    src="/agri3.jpg"
+                    src="/industrial.png"
                     alt="About Genuine Agro"
                     fill
                     className="object-cover"

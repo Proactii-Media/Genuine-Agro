@@ -195,7 +195,7 @@ export default function ProductPreview() {
               <h2 className="product-title text-5xl font-bold leading-tight text-gray-900 sm:text-6xl lg:text-5xl">
                 {PRODUCT_PREVIEW.title}
               </h2>
-              <p className="text-2xl font-semibold text-[#a4cc2e]">
+              <p className="text-2xl font-semibold text-[#0B3A21]/80">
                 {PRODUCT_PREVIEW.subtitle}
               </p>
             </motion.div>

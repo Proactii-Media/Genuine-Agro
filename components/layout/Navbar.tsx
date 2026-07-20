@@ -74,14 +74,14 @@ export default function Navbar() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
         <div className="mx-auto flex h-24 max-w-7xl items-center justify-between overflow-visible px-6 lg:px-10">
-          <Link href="/" className="relative shrink-0">
+          <Link href="/" className="relative shrink-0 overflow-visible">
             <Image
               src="/AgroLogo.png"
               alt="Genuine Agro"
-              width={420}
-              height={150}
+              width={600}
+              height={220}
               priority
-              className="h-40 w-auto object-contain"
+              className="h-52 w-auto object-contain"
             />
           </Link>
           {/* Desktop */}

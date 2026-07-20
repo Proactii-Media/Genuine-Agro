@@ -31,11 +31,11 @@ const SLIDER_CONTENT = [
       "Providing durable, UV-stabilized Shade Nets and Tape Nets for farms, nurseries, and greenhouses.",
     buttonText: "Get a Quote",
     buttonLink: "/contact",
-    image: "/agrologo.png",
+    image: "/hero.png",
   },
 ];
 
-const BACKGROUND_IMAGE = "/shade-net2.png";
+const BACKGROUND_IMAGE = "/net2.jpg";
 
 // Animation variants
 const containerVariants = {
