@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ const products = [
     children: [
       {
         name: "6 Gauge",
-        href: "/products/tape-nets/6-gauge",
+        href: "/products/6-gauge",
         children: [
           {
             name: "50% 6 gauge Tape Net",
@@ -31,19 +31,19 @@ const products = [
       },
       {
         name: "9 Gauge",
-        href: "/products/tape-nets/9-gauge",
+        href: "/products/9-gauge",
         children: [
           {
-            name: "50% 6 gauge Tape Net",
-            href: "/products/tape-nets/50-percent",
+            name: "Black Shade Net",
+            href: "/products/tape-nets/black-shade-net",
           },
           {
-            name: "75% 6 Gauge Tape Net ",
-            href: "/products/tape-nets/75-percent",
+            name: "Greenhouse Shade Net ",
+            href: "/products/tape-nets/greenhouse-shade-net",
           },
           {
-            name: "90% 6 GaugeTape Net",
-            href: "/products/tape-nets/90-percent",
+            name: "Nursery Net",
+            href: "/products/tape-nets/nursery-net",
           },
         ],
       },
@@ -52,22 +52,27 @@ const products = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
   const [activeGaugeMenu, setActiveGaugeMenu] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-    };
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setDropdownOpen(false);
+        setActiveSubMenu(null);
+        setActiveGaugeMenu(null);
+      }
+    }
 
-    handleScroll();
+    document.addEventListener("mousedown", handleClickOutside);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -100,11 +105,18 @@ export default function Navbar() {
               About
             </Link>
 
+            <Link
+              href="/quality-policy"
+              className="text-[15px] font-medium tracking-wide text-neutral-700 transition hover:text-emerald-600"
+            >
+              Quality Policy
+            </Link>
+
             {/* Dropdown */}
             <div
+              ref={dropdownRef}
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
             >
               <button className="flex items-center gap-1 text-[15px] font-medium tracking-wide text-neutral-700 transition hover:text-emerald-600">
                 Products
@@ -128,7 +140,6 @@ export default function Navbar() {
                         key={item.name}
                         className="relative"
                         onMouseEnter={() => setActiveSubMenu(item.name)}
-                        onMouseLeave={() => setActiveSubMenu(null)}
                       >
                         <Link
                           href={item.href}
@@ -154,7 +165,6 @@ export default function Navbar() {
                                 onMouseEnter={() =>
                                   setActiveGaugeMenu(child.name)
                                 }
-                                onMouseLeave={() => setActiveGaugeMenu(null)}
                               >
                                 <Link
                                   href={child.href}
@@ -252,6 +262,13 @@ export default function Navbar() {
                 className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
               >
                 About
+              </Link>
+
+              <Link
+                href="/quality-policy"
+                className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
+              >
+                Quality Policy
               </Link>
 
               <details className="rounded-xl bg-neutral-50">

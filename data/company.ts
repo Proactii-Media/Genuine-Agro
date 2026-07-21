@@ -2,9 +2,9 @@ export const company = {
   name: "Genuine Agro Shade Net",
   shortName: "Genuine Agro",
   tagline: "Shaping Growth Under Shade",
-  owner: "Manishkumar Hariram Bhanushali",
   phone: "+91 98765 43210",
   email: "enquiry@genuineagroshade.com",
+  owner: "Genuine Agro",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "919876543210",
   address: {
     line1: "PLOT NO 4301 B",

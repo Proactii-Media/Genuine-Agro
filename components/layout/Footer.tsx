@@ -29,6 +29,7 @@ export default function Footer() {
                 />
               </div>
             </Link>
+
             <p className="max-w-sm text-sm leading-7 text-white/70">
               {company.tagline}. Premium agricultural mesh solutions
               manufactured in Vapi, Gujarat.
@@ -120,7 +121,6 @@ export default function Footer() {
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} {company.name}. All rights reserved.
           </p>
-          <p className="text-xs text-white/50">{company.owner}</p>
         </div>
       </div>
     </footer>

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Send, MessageCircle } from "lucide-react";
 import { products } from "@/data/products";
-import { company } from "@/data/company";
 import { formatWhatsAppUrl } from "@/lib/utils";
 import Button from "@/components/ui/Button";
 

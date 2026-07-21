@@ -448,7 +448,7 @@ export default function AboutPage() {
       <section
         className="relative overflow-hidden bg-cover bg-center py-28 lg:py-36"
         style={{
-          backgroundImage: "url('/agri2.jpg')", // Your background image
+          backgroundImage: "url('/products/black-shade-net1.jpg')", // Your background image
         }}
       >
         {/* Light Overlay */}

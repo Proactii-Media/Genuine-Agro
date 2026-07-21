@@ -27,6 +27,27 @@ const variants = [
     description:
       "Maximum shade and temperature reduction for specialized applications.",
   },
+  {
+    title: "Black Shade Net",
+    image: "/products/black-shade-net1.jpg",
+    href: "/products/shade-nets/black",
+    description:
+      "Premium UV Stabilized HDPE Black Shade Net offering excellent heat reduction and long-lasting durability.",
+  },
+  {
+    title: "Greenhouse Shade Net",
+    image: "/products/greenhouse-net1.jpg",
+    href: "/products/shade-nets/greenhouse",
+    description:
+      "Designed for greenhouses and polyhouses to regulate temperature and create an ideal growing environment.",
+  },
+  {
+    title: "Nursery Shade Net",
+    image: "/products/nursery.webp",
+    href: "/products/shade-nets/nursery",
+    description:
+      "Provides optimum shade and ventilation for nurseries, seedlings and young plants.",
+  },
 ];
 
 export default function TapeNetsPage() {

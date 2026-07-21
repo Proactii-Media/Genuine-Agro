@@ -14,7 +14,7 @@ export default function ContactMapSection() {
           </span>
 
           <h2 className="mt-5 text-4xl font-bold text-gray-900 lg:text-5xl">
-            Let's Grow Together
+            Let&apos;s Grow Together
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-600">

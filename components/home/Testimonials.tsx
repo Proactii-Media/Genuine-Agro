@@ -67,7 +67,7 @@ export default function Testimonials() {
                 <Quote className="h-8 w-8 text-[#a4cc2e]/30" />
               </div>
 
-              <p className="leading-8 text-gray-600">"{item.review}"</p>
+              <p className="leading-8 text-gray-600">&ldquo;{item.review}&rdquo;</p>
 
               <div className="mt-8 flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#eef6df] text-lg font-bold text-[#6f9122]">

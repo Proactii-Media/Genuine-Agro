@@ -232,7 +232,7 @@ export default function ProductPreview() {
             <motion.div variants={itemVariants} className="pt-6 space-y-4">
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Link
-                  href="/products/tape-net"
+                  href="/products/tape-nets"
                   className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#0B3A21] px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-[#95b826] hover:shadow-lg hover:-translate-y-1"
                 >
                   Explore Details

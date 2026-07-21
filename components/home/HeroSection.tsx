@@ -141,11 +141,6 @@ export default function HeroSection() {
     };
   }, []);
 
-  const handleSlideChange = (index: number) => {
-    setCurrentSlide(index);
-    if (autoPlayRef.current !== null) clearInterval(autoPlayRef.current);
-  };
-
   const activeSlide = SLIDER_CONTENT[currentSlide];
 
   return (

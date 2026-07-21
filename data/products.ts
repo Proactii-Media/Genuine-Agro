@@ -77,7 +77,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "tape-net",
+    slug: "tape-nets",
     name: "Tape Net",
     tagline: "Superior Strength with Tape Yarn Technology",
     shortDescription:

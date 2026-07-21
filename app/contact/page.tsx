@@ -24,11 +24,11 @@ export default function ContactPage() {
             {/* Left */}
             <div>
               <span className="rounded-full bg-[#a4cc2e]/10 px-5 py-2 text-sm font-semibold text-[#5c7b19]">
-                Let's Connect
+                Let&apos;s Connect
               </span>
 
               <h2 className="mt-6 text-4xl font-bold text-[#16331d]">
-                We'd Love To Hear From You
+                We&apos;d Love To Hear From You
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-gray-600">

@@ -173,7 +173,7 @@ export default function TapeNet50Page() {
 
               <div className="space-y-6 p-8 leading-8 text-neutral-600">
                 <p>
-                  Genuine Agro's <strong>50% 6 Gauge Tape Net</strong> is
+                  Genuine Agro&apos;s <strong>50% 6 Gauge Tape Net</strong> is
                   manufactured using premium quality HDPE raw material with
                   advanced UV stabilizers. It provides the ideal amount of shade
                   while maintaining proper air circulation, making it perfect
