@@ -21,7 +21,7 @@ const SLIDER_CONTENT = [
       "Premium Quality Shade Nets & Tape Nets for Modern Agriculture.",
     buttonText: "Explore Products",
     buttonLink: "/products",
-    image: "/agri4.png",
+    image: "/products/black-shade-net3.jpg",
   },
   {
     id: 2,
@@ -31,11 +31,11 @@ const SLIDER_CONTENT = [
       "Providing durable, UV-stabilized Shade Nets and Tape Nets for farms, nurseries, and greenhouses.",
     buttonText: "Get a Quote",
     buttonLink: "/contact",
-    image: "/hero.png",
+    image: "/hero10.jpg",
   },
 ];
 
-const BACKGROUND_IMAGE = "/net2.jpg";
+const BACKGROUND_IMAGE = "/hero1.jpg";
 
 // Animation variants
 const containerVariants = {
@@ -158,17 +158,11 @@ export default function HeroSection() {
           className="object-cover"
           quality={90}
         />
-
-        {/* Very Light Overlay */}
-        <div className="absolute inset-0 bg-white/15" />
-
-        {/* Soft Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-transparent" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 flex min-h-screen w-full items-center pt-28 pb-16 lg:pt-32 lg:pb-20">
-        <div className="mx-auto w-full max-w-7xl px-6 lg:px-10 xl:px-16">
+        <div className="mx-auto w-full max-w-7xl pl-2 pr-6 lg:pl-4 lg:pr-10 xl:pl-6 xl:pr-16">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
             {/* LEFT CONTENT */}
             <div ref={contentRef} className="flex flex-col justify-center">
@@ -195,7 +189,7 @@ export default function HeroSection() {
                   {/* Heading */}
                   <motion.h1
                     variants={itemVariants}
-                    className="mt-6 max-w-2xl text-4xl font-semibold leading-[1.15] tracking-tight text-[#1D3B22] sm:text-5xl lg:text-[58px]"
+                    className="mt-6 max-w-2xl text-4xl font-semibold leading-[1.15] tracking-tight text-white sm:text-5xl lg:text-[58px]"
                   >
                     {activeSlide.heading.split("\n").map((line, index) => (
                       <span key={index} className="block">
@@ -207,7 +201,7 @@ export default function HeroSection() {
                   {/* Description */}
                   <motion.p
                     variants={itemVariants}
-                    className="mt-5 max-w-xl text-lg leading-8 text-[#55645A]"
+                    className="mt-5 max-w-xl text-lg leading-8 text-[#E0E7DB]"
                   >
                     {activeSlide.description}
                   </motion.p>
@@ -248,7 +242,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="mt-8 flex flex-wrap items-center gap-8 text-sm font-medium text-[#55645A]"
+                className="mt-8 flex flex-wrap items-center gap-8 text-sm font-medium text-white"
               >
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-[#7A9F2A]" />
@@ -267,8 +261,8 @@ export default function HeroSection() {
               </motion.div>
             </div>
 
-            {/* RIGHT IMAGE */}
-            <div className="relative hidden lg:flex items-center justify-center">
+            {/* RIGHT HERO IMAGE */}
+            <div className="absolute inset-y-0 -right-20 hidden lg:block w-[58%] overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeSlide.id}
@@ -276,27 +270,37 @@ export default function HeroSection() {
                   initial="hidden"
                   animate="visible"
                   exit="exit"
-                  className="relative w-full max-w-lg"
+                  className="relative h-full w-full"
                 >
-                  <div className="group relative overflow-hidden rounded-[34px] border border-[#d9e7b8] bg-gradient-to-br from-white via-[#f8fbea] to-[#eef6df] p-2 shadow-[0_30px_60px_rgba(0,0,0,0.12)]">
-                    <div className="relative aspect-square overflow-hidden rounded-[28px] bg-white">
+                  <div className="relative h-full w-full">
+                    {/* Decorative Frame */}
+                    <div
+                      className="absolute -z-10 bg-[#D8B26E]"
+                      style={{
+                        top: "-6px", // Thin top
+                        left: "-10px", // Medium left
+                        right: "-2px", // Very thin right
+                        bottom: "-24px", // Thick bottom
+                        borderTopLeftRadius: "520px",
+                      }}
+                    />
+
+                    {/* Image */}
+                    <div
+                      className="relative h-full w-full overflow-hidden"
+                      style={{
+                        borderTopLeftRadius: "500px",
+                      }}
+                    >
                       <Image
                         src={activeSlide.image}
                         alt={activeSlide.heading}
                         fill
                         priority
-                        className={`transition-transform duration-500 group-hover:scale-105 ${
-                          activeSlide.image === "/agrologo.png"
-                            ? "object-contain"
-                            : "object-cover"
-                        }`}
+                        className="object-cover object-[100%_center]"
                       />
-
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-transparent to-transparent" />
                     </div>
                   </div>
-
-                  <div className="absolute -bottom-8 -right-8 h-40 w-40 rounded-full bg-[#a4cc2e]/15 blur-3xl" />
                 </motion.div>
               </AnimatePresence>
             </div>

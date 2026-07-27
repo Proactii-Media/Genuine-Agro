@@ -34,15 +34,15 @@ const products = [
         href: "/products/9-gauge",
         children: [
           {
-            name: "Black Shade Net",
+            name: "50% Black Shade Net",
             href: "/products/tape-nets/black-shade-net",
           },
           {
-            name: "Greenhouse Shade Net ",
+            name: "75% Greenhouse Shade Net ",
             href: "/products/tape-nets/greenhouse-shade-net",
           },
           {
-            name: "Nursery Net",
+            name: "90% Nursery Net",
             href: "/products/tape-nets/nursery-net",
           },
         ],
@@ -276,15 +276,36 @@ export default function Navbar() {
                   Products
                 </summary>
 
-                <div className="pb-4">
-                  {products.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="block px-8 py-3 text-neutral-600 hover:text-emerald-600"
-                    >
-                      {item.name}
-                    </Link>
+                <div className="pb-3">
+                  {products.map((product) => (
+                    <details key={product.name} className="ml-4">
+                      <summary className="cursor-pointer list-none rounded-lg px-4 py-3 font-medium text-neutral-700 hover:bg-neutral-100">
+                        {product.name}
+                      </summary>
+
+                      <div className="ml-4">
+                        {product.children?.map((gauge) => (
+                          <details key={gauge.name} className="mt-1">
+                            <summary className="cursor-pointer list-none rounded-lg px-4 py-3 text-neutral-600 hover:bg-neutral-100">
+                              {gauge.name}
+                            </summary>
+
+                            <div className="ml-5 border-l border-neutral-200">
+                              {gauge.children?.map((item) => (
+                                <Link
+                                  key={item.name}
+                                  href={item.href}
+                                  onClick={() => setMobileOpen(false)}
+                                  className="block px-4 py-3 text-sm text-neutral-500 transition hover:bg-emerald-50 hover:text-emerald-600"
+                                >
+                                  {item.name}
+                                </Link>
+                              ))}
+                            </div>
+                          </details>
+                        ))}
+                      </div>
+                    </details>
                   ))}
                 </div>
               </details>
