@@ -242,7 +242,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
-                className="mt-8 flex flex-wrap items-center gap-8 text-sm font-medium text-white"
+                className="mt-8 flex flex-wrap items-center gap-8 text-sm font-medium text-"
               >
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-[#7A9F2A]" />
