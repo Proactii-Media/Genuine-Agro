@@ -30,7 +30,7 @@ const APPLICATIONS = [
   },
   {
     title: "Vegetable Farming",
-    image: "/agri3.jpg",
+    image: "/products/vegetable.jpg",
     details: [
       "Improves Crop Yield",
       "Maintains Moisture",

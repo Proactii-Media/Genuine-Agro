@@ -15,7 +15,7 @@ export default function ProductsPage() {
       {/* HERO */}
       <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
         <Image
-          src="/shade-net2.png"
+          src="/products/multi-color9.jpeg"
           alt="Products"
           fill
           priority

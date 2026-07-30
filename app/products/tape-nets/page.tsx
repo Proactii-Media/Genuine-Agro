@@ -16,14 +16,14 @@ const variants = [
   {
     title: "75% Shade Net",
     image: "/products/75-Shade-net1.jpeg",
-    href: "/products/Shade-nets/75-percent",
+    href: "/products/6-gauge/75-percent",
     description:
       "Excellent shade for nurseries, greenhouses and delicate plants.",
   },
   {
     title: "90% Shade Net",
     image: "/products/90-Shade-net2.jpeg",
-    href: "/products/Shade-nets/90-percent",
+    href: "/products/6-gauge/90-percent",
     description:
       "Maximum shade and temperature reduction for specialized applications.",
   },
@@ -56,7 +56,7 @@ export default function ShadeNetsPage() {
       {/* HERO */}
       <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
         <Image
-          src="/Shade-net.jpg"
+          src="/products/75-tape-net2.jpeg"
           alt="Shade Nets"
           fill
           priority

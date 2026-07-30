@@ -268,6 +268,7 @@ export default function Navbar() {
             <div className="space-y-1 px-6">
               <Link
                 href="/"
+                onClick={() => setMobileOpen(false)}
                 className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
               >
                 Home
@@ -275,6 +276,7 @@ export default function Navbar() {
 
               <Link
                 href="/about"
+                onClick={() => setMobileOpen(false)}
                 className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
               >
                 About
@@ -282,6 +284,7 @@ export default function Navbar() {
 
               <Link
                 href="/quality-policy"
+                onClick={() => setMobileOpen(false)}
                 className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
               >
                 Quality Policy
@@ -327,14 +330,16 @@ export default function Navbar() {
               </details>
 
               <Link
-                href="/contact"
+                href="/applications"
+                onClick={() => setMobileOpen(false)}
                 className="block rounded-xl px-5 py-4 text-lg font-medium hover:bg-neutral-100"
               >
-                Contact
+                Applications
               </Link>
 
               <Link
                 href="/contact"
+                onClick={() => setMobileOpen(false)}
                 className="mt-6 block rounded-full bg-emerald-600 py-4 text-center font-semibold text-white"
               >
                 Inquiry
