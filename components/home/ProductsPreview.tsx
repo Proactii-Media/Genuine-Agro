@@ -20,8 +20,8 @@ const PRODUCT_PREVIEW = {
   images: [
     "/products/events.jpg",
     "/hero1.jpg",
+    "/agri1.jpg",
     "/products/multi-color9.jpeg",
-    "/agri3.jpg",
   ],
   features: [
     "UV Protected",
