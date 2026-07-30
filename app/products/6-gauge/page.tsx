@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 
 const variants = [
   {
-    title: "50% Tape Net",
-    image: "/products/50-tape-net1.jpeg",
-    href: "/products/tape-nets/50-percent",
+    title: "50% Shade Net",
+    image: "/products/50-Shade-net1.jpeg",
+    href: "/products/Shade-nets/50-percent",
     description:
       "Perfect balance between sunlight and protection for multiple crops.",
   },
   {
-    title: "75% Tape Net",
+    title: "75% Shade Net",
     image: "/products/75-tape-net1.jpeg",
     href: "/products/tape-nets/75-percent",
     description:
       "Excellent shade for nurseries, greenhouses and delicate plants.",
   },
   {
-    title: "90% Tape Net",
+    title: "90% Shade Net",
     image: "/products/90-tape-net2.jpeg",
     href: "/products/tape-nets/90-percent",
     description:
@@ -36,7 +36,7 @@ export default function SixGaugePage() {
       <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
         <Image
           src="/tape-net.jpg"
-          alt="6 Gauge Tape Nets"
+          alt="6 Gauge Shade Nets"
           fill
           priority
           className="object-cover"
@@ -50,11 +50,11 @@ export default function SixGaugePage() {
           </p>
 
           <h1 className="max-w-3xl text-5xl font-bold text-white md:text-6xl lg:text-7xl">
-            6 Gauge Tape Nets
+            6 Gauge Shade Nets
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            Premium UV Stabilized HDPE 6 Gauge Tape Nets engineered for
+            Premium UV Stabilized HDPE 6 Gauge Shade Nets engineered for
             agriculture, nurseries, greenhouses and industrial shade
             applications with superior durability and long-lasting performance.
           </p>
@@ -74,7 +74,7 @@ export default function SixGaugePage() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-600">
-              Select the 6 Gauge Tape Net that best matches your agricultural,
+              Select the 6 Gauge Shade Net that best matches your agricultural,
               nursery or industrial requirements.
             </p>
           </div>

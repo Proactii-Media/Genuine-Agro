@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const products = [
   {
-    name: "Tape Nets",
+    name: "Shade Nets",
     href: "/products/tape-nets",
     children: [
       {
@@ -16,16 +16,24 @@ const products = [
         href: "/products/6-gauge",
         children: [
           {
-            name: "50% 6 gauge Tape Net",
-            href: "/products/tape-nets/50-percent",
+            name: "50% 6 gauge Shade Net",
+            href: "/products/6-gauge/50-percent",
           },
           {
-            name: "75% 6 Gauge Tape Net ",
-            href: "/products/tape-nets/75-percent",
+            name: "75% 6 Gauge Shade Net ",
+            href: "/products/6-gauge/75-percent",
           },
           {
-            name: "90% 6 GaugeTape Net",
-            href: "/products/tape-nets/90-percent",
+            name: "90% 6 GaugeShade Net",
+            href: "/products/6-gauge/90-percent",
+          },
+          {
+            name: "Color Shade Net",
+            href: "/products/6-gauge/color6",
+          },
+          {
+            name: "Multi Color Shade Net",
+            href: "/products/6-gauge/multi-color6",
           },
         ],
       },
@@ -35,15 +43,23 @@ const products = [
         children: [
           {
             name: "50% Black Shade Net",
-            href: "/products/tape-nets/black-shade-net",
+            href: "/products/9-gauge/black-shade-net",
           },
           {
             name: "75% Greenhouse Shade Net ",
-            href: "/products/tape-nets/greenhouse-shade-net",
+            href: "/products/9-gauge/greenhouse-shade-net",
           },
           {
             name: "90% Nursery Net",
-            href: "/products/tape-nets/nursery-net",
+            href: "/products/9-gauge/nursery-net",
+          },
+          {
+            name: "Color Shade Net",
+            href: "/products/9-gauge/color9",
+          },
+          {
+            name: "Multi Color Shade Net",
+            href: "/products/9-gauge/multi-color9",
           },
         ],
       },
@@ -208,10 +224,10 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/contact"
+              href="/applications"
               className="text-[15px] font-medium tracking-wide text-neutral-700 transition hover:text-emerald-600"
             >
-              Contact
+              Applications
             </Link>
           </nav>
 

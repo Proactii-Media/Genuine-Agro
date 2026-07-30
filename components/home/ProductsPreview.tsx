@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
@@ -13,11 +13,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PRODUCT_PREVIEW = {
   badge: "Premium Solution",
-  title: "Tape Net",
+  title: "Shade Net",
   subtitle: "Industrial-Grade Crop Protection",
   description:
     "Engineered for maximum durability and crop protection with advanced UV stabilizers.",
-  image: "/tape-net.jpg",
+  images: [
+    "/products/events.jpg",
+    "/hero1.jpg",
+    "/products/multi-color9.jpeg",
+    "/agri3.jpg",
+  ],
   features: [
     "UV Protected",
     "Weather Resistant",
@@ -51,6 +56,15 @@ const itemVariants = {
 export default function ProductPreview() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageContainerRef = useRef<HTMLDivElement>(null);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % PRODUCT_PREVIEW.images.length);
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     if (!sectionRef.current || !imageContainerRef.current) return;
@@ -135,15 +149,37 @@ export default function ProductPreview() {
             <div className="group relative overflow-hidden rounded-3xl border border-[#a4cc2e]/20 bg-gradient-to-br from-[#a4cc2e]/10 to-[#ffb800]/5 p-1 shadow-2xl">
               {/* Inner container */}
               <div className="relative aspect-square overflow-hidden rounded-[26px] bg-gradient-to-br from-gray-100 to-gray-50">
-                <Image
-                  src={PRODUCT_PREVIEW.image}
-                  alt={PRODUCT_PREVIEW.title}
-                  fill
-                  className="object-cover transition-transform duration-10 group-hover:scale-105"
-                />
+                <motion.div
+                  key={currentImage}
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="absolute inset-0"
+                >
+                  <Image
+                    src={PRODUCT_PREVIEW.images[currentImage]}
+                    alt={PRODUCT_PREVIEW.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </motion.div>
 
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+                  {PRODUCT_PREVIEW.images.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImage(index)}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        currentImage === index
+                          ? "w-8 bg-white"
+                          : "w-2.5 bg-white/50 hover:bg-white"
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
 

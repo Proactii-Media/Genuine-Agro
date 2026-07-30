@@ -7,23 +7,23 @@ import { motion } from "framer-motion";
 
 const variants = [
   {
-    title: "50% Tape Net",
-    image: "/products/50-tape-net1.jpeg",
-    href: "/products/tape-nets/50-percent",
+    title: "50% Shade Net",
+    image: "/products/50-Shade-net1.jpeg",
+    href: "/products/6-gauge/50-percent",
     description:
       "Perfect balance between sunlight and protection for multiple crops.",
   },
   {
-    title: "75% Tape Net",
-    image: "/products/75-tape-net1.jpeg",
-    href: "/products/tape-nets/75-percent",
+    title: "75% Shade Net",
+    image: "/products/75-Shade-net1.jpeg",
+    href: "/products/Shade-nets/75-percent",
     description:
       "Excellent shade for nurseries, greenhouses and delicate plants.",
   },
   {
-    title: "90% Tape Net",
-    image: "/products/90-tape-net2.jpeg",
-    href: "/products/tape-nets/90-percent",
+    title: "90% Shade Net",
+    image: "/products/90-Shade-net2.jpeg",
+    href: "/products/Shade-nets/90-percent",
     description:
       "Maximum shade and temperature reduction for specialized applications.",
   },
@@ -50,14 +50,14 @@ const variants = [
   },
 ];
 
-export default function TapeNetsPage() {
+export default function ShadeNetsPage() {
   return (
     <>
       {/* HERO */}
       <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
         <Image
-          src="/tape-net.jpg"
-          alt="Tape Nets"
+          src="/Shade-net.jpg"
+          alt="Shade Nets"
           fill
           priority
           className="object-cover"
@@ -71,11 +71,11 @@ export default function TapeNetsPage() {
           </p>
 
           <h1 className="max-w-3xl text-5xl font-bold text-white md:text-6xl lg:text-7xl">
-            Tape Nets
+            Shade Nets
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            Premium UV Stabilized HDPE Tape Nets designed for agriculture,
+            Premium UV Stabilized HDPE Shade Nets designed for agriculture,
             nurseries, greenhouses and industrial shade applications.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function TapeNetsPage() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-600">
-              Select the Tape Net that best matches your agricultural or
+              Select the Shade Net that best matches your agricultural or
               industrial requirements.
             </p>
           </div>

@@ -8,22 +8,22 @@ import { motion } from "framer-motion";
 const variants = [
   {
     title: "Black Shade Net",
-    image: "/products/black-shade-net1.jpg",
-    href: "/products/shade-nets/black",
+    image: "/products/black-tape-net1.jpg",
+    href: "/products/tape-nets/black",
     description:
       "Premium UV Stabilized HDPE Black Shade Net offering excellent heat reduction, crop protection and long-lasting outdoor durability.",
   },
   {
     title: "Greenhouse Shade Net",
     image: "/products/greenhouse-net1.jpg",
-    href: "/products/shade-nets/greenhouse",
+    href: "/products/tape-nets/greenhouse",
     description:
       "Specially designed for greenhouses and polyhouses to maintain optimum temperature and healthy crop growth.",
   },
   {
     title: "Nursery Shade Net",
     image: "/products/nursery.webp",
-    href: "/products/shade-nets/nursery",
+    href: "/products/tape-nets/nursery",
     description:
       "Ideal for nurseries and young plants by providing balanced shade, ventilation and UV protection.",
   },

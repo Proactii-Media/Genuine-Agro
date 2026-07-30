@@ -107,13 +107,13 @@ export default function ContactPage() {
                 <select className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none">
                   <option>Select Product</option>
 
-                  <option>35% Tape Net</option>
+                  <option>35% Shade Net</option>
 
-                  <option>50% Tape Net</option>
+                  <option>50% Shade Net</option>
 
-                  <option>75% Tape Net</option>
+                  <option>75% Shade Net</option>
 
-                  <option>90% Tape Net</option>
+                  <option>90% Shade Net</option>
                 </select>
 
                 <textarea

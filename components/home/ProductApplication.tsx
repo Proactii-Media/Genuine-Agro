@@ -5,20 +5,8 @@ import { motion } from "framer-motion";
 
 const APPLICATIONS = [
   {
-    title: "35% Tape Shade Net",
-    image: "/products/50-tape-net1.jpeg",
-    details: [
-      "Shade: 30–37%",
-      "Material: 100% Virgin HDPE",
-      "UV Stabilized: 3%",
-      "Width: 1m – 6.2m",
-      "Length: 50m Roll",
-      "Colour: Natural, White, Green",
-    ],
-  },
-  {
     title: "Nursery Net",
-    image: "/products/50-tape-net2.jpeg",
+    image: "/agri4.png",
     details: [
       "Healthy seedling growth",
       "Reduces heat stress",
@@ -30,7 +18,7 @@ const APPLICATIONS = [
   },
   {
     title: "Greenhouse Net",
-    image: "/products/75-tape-net1.jpeg",
+    image: "/products/greenhouse-net1.jpg",
     details: [
       "Temperature Control",
       "Improved Ventilation",
@@ -41,20 +29,8 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Anti Bird Net",
-    image: "/products/75-tape-net2.jpeg",
-    details: [
-      "Protects Crops",
-      "UV Stabilized",
-      "High Strength",
-      "Reusable",
-      "Weather Resistant",
-      "Easy Installation",
-    ],
-  },
-  {
     title: "Vegetable Farming",
-    image: "/products/90-tape-net1.jpeg",
+    image: "/agri3.jpg",
     details: [
       "Improves Crop Yield",
       "Maintains Moisture",
@@ -66,7 +42,7 @@ const APPLICATIONS = [
   },
   {
     title: "Fruit Orchard",
-    image: "/products/90-tape-net2.jpeg",
+    image: "/products/fruit.jpg",
     details: [
       "Bird Protection",
       "Sun Protection",
@@ -78,7 +54,7 @@ const APPLICATIONS = [
   },
   {
     title: "Polyhouse",
-    image: "/agri.png",
+    image: "/products/greenhouse-net2.jpg",
     details: [
       "Suitable for Polyhouse",
       "Reduces Heat",
@@ -98,6 +74,54 @@ const APPLICATIONS = [
       "UV Protection",
       "Easy Installation",
       "Long Lasting",
+    ],
+  },
+  {
+    title: "Event Nets",
+    image: "/products/events.jpg",
+    details: [
+      "Decorative Shade Solution",
+      "Multiple Color Options",
+      "UV Stabilized",
+      "Lightweight & Durable",
+      "Easy Installation",
+      "Premium Quality",
+    ],
+  },
+  {
+    title: "Agriculture Net",
+    image: "/agri1.jpg",
+    details: [
+      "Crop Protection",
+      "Optimal Shade Coverage",
+      "UV Protection",
+      "Weather Resistant",
+      "Improved Crop Growth",
+      "Premium Quality",
+    ],
+  },
+  {
+    title: "Construction Net",
+    image: "/constrution.png",
+    details: [
+      "High Strength Material",
+      "Dust & Debris Control",
+      "UV Stabilized",
+      "Weather Resistant",
+      "Heavy Duty Performance",
+      "Premium Quality",
+    ],
+  },
+  {
+    title: "Safety Net",
+    image: "/safety.jpg",
+    details: [
+      "High Impact Resistance",
+      "Worker Safety",
+      "Heavy Duty HDPE",
+      "UV Stabilized",
+      "Long Service Life",
+      "Premium Quality",
     ],
   },
 ];

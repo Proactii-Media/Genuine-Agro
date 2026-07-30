@@ -13,17 +13,14 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const images = [
-  "/products/greenhouse-net1.jpg",
-  "/products/greenhouse-net2.jpg",
-  "/products/greenhouse-net3.jpg",
-];
+const images = ["/products/75-tape-net2.jpeg"];
 
-export default function GreenhouseShadeNetPage() {
+export default function tapeNet75Page() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
     <main className="bg-[#f7f8f5] pt-28 pb-20">
+      {/* Product Section */}
       <section className="mx-auto max-w-6xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -32,16 +29,32 @@ export default function GreenhouseShadeNetPage() {
           className="overflow-hidden rounded-[28px] border border-[#dce6c5] bg-white shadow-lg"
         >
           <div className="grid lg:grid-cols-[420px_1fr]">
-            {/* LEFT IMAGE */}
+            {/* Left Image */}
             <div className="border-r border-[#dce6c5] p-5">
               <div className="overflow-hidden rounded-[24px] bg-[#f8faf4]">
                 <Image
                   src={selectedImage}
-                  alt="Greenhouse Shade Net"
+                  alt="75% 6 Gauge Shade Net"
                   width={700}
                   height={700}
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
+              </div>
+              {/* 50% Shade Badge */}
+              <div className="absolute left-55 bottom-28 z-20">
+                <div className="rounded-2xl bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    SHADE LEVEL
+                  </p>
+
+                  <h3 className="mt-1 text-4xl font-extrabold leading-none text-[#95C11F]">
+                    75%
+                  </h3>
+
+                  <p className="mt-1 text-sm font-medium text-gray-700">
+                    Protection
+                  </p>
+                </div>
               </div>
 
               {/* Thumbnails */}
@@ -69,7 +82,7 @@ export default function GreenhouseShadeNetPage() {
               </div>
             </div>
 
-            {/* RIGHT */}
+            {/* Right Side */}
             <div className="p-6 lg:p-8">
               <div className="flex items-start justify-between">
                 <div>
@@ -81,13 +94,8 @@ export default function GreenhouseShadeNetPage() {
                   </div>
 
                   <h1 className="text-3xl font-bold text-[#24301D]">
-                    Greenhouse Shade Net
+                    75% 6 Gauge Shade Net
                   </h1>
-
-                  <p className="mt-2 text-base text-neutral-600">
-                    Premium UV Stabilized HDPE Shade Net for Greenhouses &
-                    Polyhouses
-                  </p>
                 </div>
 
                 <button className="rounded-full border border-[#dce6c5] p-2.5 transition hover:bg-[#f5f8ee]">
@@ -104,7 +112,6 @@ export default function GreenhouseShadeNetPage() {
 
                 <select className="rounded-xl border border-[#dce6c5] px-4 py-3 outline-none">
                   <option>Square Meter</option>
-                  <option>Roll</option>
                 </select>
 
                 <button className="rounded-xl bg-[#0B3A21] px-6 py-3 font-semibold text-white transition hover:bg-[#6c8d26]">
@@ -115,14 +122,12 @@ export default function GreenhouseShadeNetPage() {
               {/* Specifications */}
               <div className="mt-8 overflow-hidden rounded-2xl border border-[#e6edd6]">
                 {[
-                  ["Business Type", "Manufacturer & Exporter"],
-                  ["Product", "Greenhouse Shade Net"],
-                  ["Material", "100% Virgin HDPE"],
-                  ["Shade", "35% - 90%"],
-                  ["Colour", "Green / Black / White"],
-                  ["UV Stabilized", "Yes"],
+                  ["Business Type", "Manufacturer, Exporter"],
+                  ["tape", "75%"],
+                  ["Gauge", "6 Gauge"],
+                  ["Material", "HDPE"],
+                  ["UV Protection", "Premium"],
                   ["Width", "1m - 6.2m"],
-                  ["Roll Length", "50 Meter"],
                 ].map(([title, value]) => (
                   <div
                     key={title}
@@ -139,7 +144,7 @@ export default function GreenhouseShadeNetPage() {
                 ))}
               </div>
 
-              {/* Buttons */}
+              {/* Action Buttons */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="tel:+919999999999"
@@ -166,8 +171,11 @@ export default function GreenhouseShadeNetPage() {
       <section className="mt-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
-            {/* Product Description */}
+            {/* Left Side */}
+
             <div className="overflow-hidden rounded-[34px] border border-[#dce6c5] bg-white shadow-lg">
+              {/* Header */}
+
               <div className="border-b border-[#edf2e3] bg-[#f8fbf3] px-8 py-6">
                 <h2 className="text-3xl font-bold text-[#24301D]">
                   Product Description
@@ -176,37 +184,30 @@ export default function GreenhouseShadeNetPage() {
 
               <div className="space-y-6 p-8 leading-8 text-neutral-600">
                 <p>
-                  Genuine Agro's <strong>Greenhouse Shade Net</strong> is
-                  manufactured using premium quality UV stabilized HDPE tapes to
-                  create an ideal environment for protected cultivation. It
-                  effectively reduces excessive sunlight while maintaining
-                  optimum ventilation and temperature inside greenhouses and
-                  polyhouses.
+                  Genuine Agro&apos;s <strong>75% 6 Gauge Shade Net</strong> is
+                  manufactured using premium quality 100% Virgin HDPE with
+                  advanced UV stabilizers. Designed to provide 75% shade, it
+                  creates the ideal growing environment by reducing excessive
+                  sunlight while maintaining excellent airflow.
                 </p>
 
                 <p>
-                  Designed for commercial agriculture, floriculture and nursery
-                  applications, the net minimizes heat stress, protects delicate
-                  crops and promotes healthy plant growth throughout the year.
+                  This shade net helps lower temperature, reduce water
+                  evaporation, and protect crops from harsh weather conditions.
+                  Its durable construction ensures long outdoor life with
+                  excellent tear resistance and UV protection.
                 </p>
 
                 <p>
-                  Its lightweight knitted construction provides superior
-                  strength, tear resistance and long outdoor life. The net is
-                  easy to install and requires minimal maintenance, making it a
-                  reliable solution for modern farming.
-                </p>
-
-                <p>
-                  Available in multiple shade percentages, Genuine Agro
-                  Greenhouse Shade Nets are suitable for vegetables, flowers,
-                  herbs, fruits and high-value crops grown under controlled
-                  conditions.
+                  Ideal for greenhouses, nurseries, floriculture, vegetable
+                  cultivation, horticulture, fruit orchards, terrace gardens,
+                  and agricultural drying applications.
                 </p>
               </div>
             </div>
 
-            {/* Quick Highlights */}
+            {/* Right Card */}
+
             <div className="rounded-[34px] border border-[#dce6c5] bg-white p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-[#24301D]">
                 Quick Highlights
@@ -215,15 +216,13 @@ export default function GreenhouseShadeNetPage() {
               <div className="mt-8 space-y-5">
                 {[
                   "100% Virgin HDPE",
-                  "UV Stabilized",
-                  "Greenhouse Application",
-                  "Temperature Control",
-                  "Excellent Air Circulation",
-                  "High Tensile Strength",
+                  "75% Shade Protection",
+                  "Premium UV Stabilized",
                   "Weather Resistant",
-                  "Long Service Life",
+                  "High Tear Strength",
                   "Easy Installation",
-                  "Eco Friendly",
+                  "Long Service Life",
+                  "Reusable & Eco Friendly",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-4">
                     <CheckCircle2 size={20} className="mt-1 text-[#7A9F2A]" />
@@ -238,6 +237,7 @@ export default function GreenhouseShadeNetPage() {
       </section>
 
       {/* Technical Specifications */}
+
       <section className="mt-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="overflow-hidden rounded-[34px] border border-[#dce6c5] bg-white shadow-lg">
@@ -249,17 +249,14 @@ export default function GreenhouseShadeNetPage() {
 
             <div className="divide-y divide-[#edf2e3]">
               {[
-                ["Product Name", "Greenhouse Shade Net"],
+                ["Product Name", "75% 6 Gauge Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Colour", "Green / Black / White"],
-                ["Shade Percentage", "35%, 50%, 75%, 90%"],
-                ["UV Stabilized", "Yes"],
-                ["Knitting Type", "Warp Knitted"],
+                ["Shade Percentage", "75%"],
+                ["Gauge", "6 Gauge"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter"],
-                ["Temperature Reduction", "Excellent"],
-                ["Weather Resistance", "Excellent"],
-                ["Application", "Greenhouses & Polyhouses"],
+                ["Length", "50 Meter Roll"],
+                ["Colour", "Green / Black / White"],
+                ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
                 ["Minimum Order Quantity", "5000 Square Meter"],
               ].map(([title, value]) => (
@@ -278,6 +275,7 @@ export default function GreenhouseShadeNetPage() {
       </section>
 
       {/* CTA */}
+
       <section className="mt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="overflow-hidden rounded-[34px] bg-gradient-to-br from-[#072B18] via-[#0B3A21] to-[#051A0F] p-12 text-white shadow-2xl">
@@ -288,13 +286,13 @@ export default function GreenhouseShadeNetPage() {
                 </span>
 
                 <h2 className="mt-5 text-4xl font-bold">
-                  Looking for Greenhouse Shade Nets?
+                  Looking for Bulk Orders?
                 </h2>
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-                  Get factory-direct pricing on premium Greenhouse Shade Nets
-                  manufactured using virgin HDPE with advanced UV stabilization.
-                  We offer customized shade percentages, widths and bulk supply
+                  Get factory-direct pricing for{" "}
+                  <strong>75% 6 Gauge Shade Net</strong>. Contact our sales team
+                  for quotations, custom sizes, transportation, and delivery
                   across India.
                 </p>
               </div>
@@ -332,26 +330,22 @@ export default function GreenhouseShadeNetPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-neutral-600">
-              Explore more premium agricultural netting solutions designed for
-              protected cultivation, nurseries and modern farming applications.
+              Explore our premium range of agricultural Shade nets designed for
+              different shade requirements and farming applications.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
-                title: "Black Shade Net",
-                href: "/products/tape-nets/black-shade-net",
-                image: "/products/black-shade-net1.jpg",
-                description:
-                  "Premium UV stabilized HDPE Black Shade Net offering superior heat reduction, excellent durability and reliable crop protection.",
+                title: "50% 6 Gauge Shade Net",
+                href: "/products/tape-nets/50-percent",
+                image: "/products/50-tape-net1.jpeg",
               },
               {
-                title: "Nursery Shade Net",
-                href: "/products/tape-nets/nursery-net",
-                image: "/products/nursery.webp",
-                description:
-                  "Designed specifically for nurseries and young plants, providing optimum sunlight filtration and healthy plant development.",
+                title: "90% 6 Gauge Shade Net",
+                href: "/products/tape-nets/90-percent",
+                image: "/products/90-tape-net2.jpeg",
               },
             ].map((item) => (
               <Link
@@ -379,7 +373,9 @@ export default function GreenhouseShadeNetPage() {
                   </h3>
 
                   <p className="mt-3 leading-7 text-neutral-600">
-                    {item.description}
+                    Premium HDPE Shade net manufactured with UV stabilized raw
+                    material for excellent durability, weather resistance, and
+                    long-lasting agricultural performance.
                   </p>
 
                   <div className="mt-6 inline-flex items-center gap-2 font-semibold text-[#6D9224] transition-all group-hover:gap-3">

@@ -18,7 +18,7 @@ const SLIDER_CONTENT = [
     badge: "Premium Solutions",
     heading: "Protect Your Crops.\nMaximize Your Growth.",
     description:
-      "Premium Quality Shade Nets & Tape Nets for Modern Agriculture.",
+      "Premium Quality Shade Nets & Shade Nets for Modern Agriculture.",
     buttonText: "Explore Products",
     buttonLink: "/products",
     image: "/products/black-shade-net3.jpg",
@@ -28,7 +28,7 @@ const SLIDER_CONTENT = [
     badge: "Trusted Partner",
     heading: "Your Trusted Partner in Agricultural Protection",
     description:
-      "Providing durable, UV-stabilized Shade Nets and Tape Nets for farms, nurseries, and greenhouses.",
+      "Providing durable, UV-stabilized Shade Nets and Shade Nets for farms, nurseries, and greenhouses.",
     buttonText: "Get a Quote",
     buttonLink: "/contact",
     image: "/hero10.jpg",

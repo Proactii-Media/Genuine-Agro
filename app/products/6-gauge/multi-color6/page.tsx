@@ -3,19 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  ChevronRight,
-  Phone,
-  Mail,
-  Share2,
-  Star,
-  CheckCircle2,
-} from "lucide-react";
+import { Phone, Mail, Share2, Star } from "lucide-react";
 import { useState } from "react";
+import { ChevronRight, CheckCircle2 } from "lucide-react";
 
-const images = ["/products/90-tape-net1.jpeg", "/products/90-tape-net2.jpeg"];
+const images = ["/products/multi-color6.jpeg"];
 
-export default function TapeNet90Page() {
+export default function MultiColorShadeNetPage() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
@@ -29,19 +23,32 @@ export default function TapeNet90Page() {
           className="overflow-hidden rounded-[28px] border border-[#dce6c5] bg-white shadow-lg"
         >
           <div className="grid lg:grid-cols-[420px_1fr]">
-            {/* Left Image */}
+            {/* LEFT IMAGE */}
             <div className="border-r border-[#dce6c5] p-5">
-              <div className="overflow-hidden rounded-[24px] bg-[#f8faf4]">
+              <div className="relative overflow-hidden rounded-[24px] bg-[#f8faf4]">
                 <Image
                   src={selectedImage}
-                  alt="90% 6 Gauge Tape Net"
+                  alt="Multi-Color Shade Net"
                   width={700}
                   height={700}
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
+
+                {/* Badge */}
+                <div className="absolute bottom-5 left-5 z-20 rounded-3xl bg-white/95 px-6 py-5 shadow-xl backdrop-blur">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    AVAILABLE IN
+                  </p>
+
+                  <h3 className="text-3xl font-extrabold text-[#95C11F]">
+                    Multi
+                  </h3>
+
+                  <p className="text-lg text-gray-700">Color Options</p>
+                </div>
               </div>
 
-              {/* Thumbnails */}
+              {/* Thumbnail */}
               <div className="mt-4 flex gap-3">
                 {images.map((img, index) => (
                   <button
@@ -66,20 +73,28 @@ export default function TapeNet90Page() {
               </div>
             </div>
 
-            {/* Right Side */}
+            {/* RIGHT CONTENT */}
             <div className="p-6 lg:p-8">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#edf5db] px-3 py-1.5">
                     <Star size={15} className="fill-[#7A9F2A] text-[#7A9F2A]" />
+
                     <span className="text-sm font-semibold text-[#072B18]">
                       Premium Product
                     </span>
                   </div>
 
                   <h1 className="text-3xl font-bold text-[#24301D]">
-                    90% 6 Gauge Tape Net
+                    Multi-Color Shade Net
                   </h1>
+
+                  <p className="mt-3 max-w-xl leading-7 text-neutral-600">
+                    Premium quality HDPE shade net available in multiple
+                    attractive colors for agriculture, nurseries, greenhouses,
+                    landscaping, terrace gardens and commercial shading
+                    applications.
+                  </p>
                 </div>
 
                 <button className="rounded-full border border-[#dce6c5] p-2.5 transition hover:bg-[#f5f8ee]">
@@ -88,6 +103,7 @@ export default function TapeNet90Page() {
               </div>
 
               {/* Quantity */}
+
               <div className="mt-6 flex flex-wrap gap-3">
                 <input
                   placeholder="Quantity"
@@ -96,6 +112,7 @@ export default function TapeNet90Page() {
 
                 <select className="rounded-xl border border-[#dce6c5] px-4 py-3 outline-none">
                   <option>Square Meter</option>
+                  <option>Roll</option>
                 </select>
 
                 <button className="rounded-xl bg-[#0B3A21] px-6 py-3 font-semibold text-white transition hover:bg-[#6c8d26]">
@@ -104,14 +121,15 @@ export default function TapeNet90Page() {
               </div>
 
               {/* Specifications */}
+
               <div className="mt-8 overflow-hidden rounded-2xl border border-[#e6edd6]">
                 {[
                   ["Business Type", "Manufacturer, Exporter"],
-                  ["Shade", "90%"],
-                  ["Gauge", "6 Gauge"],
-                  ["Material", "HDPE"],
-                  ["UV Protection", "Premium"],
+                  ["Material", "100% Virgin HDPE"],
+                  ["Colors", "Green, Black, White, Blue & Custom"],
+                  ["UV Protection", "Premium UV Stabilized"],
                   ["Width", "1m - 6.2m"],
+                  ["Application", "Agriculture & Industrial"],
                 ].map(([title, value]) => (
                   <div
                     key={title}
@@ -128,7 +146,8 @@ export default function TapeNet90Page() {
                 ))}
               </div>
 
-              {/* Action Buttons */}
+              {/* Buttons */}
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="tel:+919999999999"
@@ -155,8 +174,7 @@ export default function TapeNet90Page() {
       <section className="mt-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
-            {/* Left Side */}
-
+            {/* Product Description */}
             <div className="overflow-hidden rounded-[34px] border border-[#dce6c5] bg-white shadow-lg">
               <div className="border-b border-[#edf2e3] bg-[#f8fbf3] px-8 py-6">
                 <h2 className="text-3xl font-bold text-[#24301D]">
@@ -166,33 +184,31 @@ export default function TapeNet90Page() {
 
               <div className="space-y-6 p-8 leading-8 text-neutral-600">
                 <p>
-                  Genuine Agro&apos;s <strong>90% 6 Gauge Tape Net</strong> is
-                  manufactured using premium quality 100% Virgin HDPE with
-                  advanced UV stabilizers. Designed to provide maximum shade
-                  coverage, it effectively protects crops, plants, and work
-                  areas from intense sunlight while maintaining adequate
-                  ventilation.
+                  Genuine Agro's <strong>Multi-Color Shade Net</strong> is
+                  manufactured using premium quality 100% Virgin HDPE and
+                  advanced UV stabilizers. It is designed to provide effective
+                  shade, long-lasting durability, and an attractive appearance
+                  for both agricultural and commercial applications.
                 </p>
 
                 <p>
-                  The 90% shade net significantly reduces heat buildup,
-                  minimizes water evaporation, and creates an ideal environment
-                  for sensitive crops, nurseries, livestock sheds, parking
-                  areas, and industrial applications. It offers exceptional
-                  durability, tear resistance, and long outdoor service life.
+                  Available in multiple vibrant colors including Green, Black,
+                  White, Blue and custom combinations, these shade nets improve
+                  crop protection while enhancing the aesthetics of nurseries,
+                  greenhouses, gardens, resorts, parking areas, terraces and
+                  outdoor spaces.
                 </p>
 
                 <p>
-                  Suitable for greenhouses, nurseries, floriculture,
-                  horticulture, poultry farms, cattle sheds, terrace gardens,
-                  parking sheds, warehouses, and agricultural drying
-                  applications requiring maximum shade protection.
+                  The UV stabilized construction ensures excellent weather
+                  resistance, reduced heat buildup, improved ventilation and a
+                  long outdoor service life even under harsh environmental
+                  conditions.
                 </p>
               </div>
             </div>
 
-            {/* Right Card */}
-
+            {/* Quick Highlights */}
             <div className="rounded-[34px] border border-[#dce6c5] bg-white p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-[#24301D]">
                 Quick Highlights
@@ -201,13 +217,13 @@ export default function TapeNet90Page() {
               <div className="mt-8 space-y-5">
                 {[
                   "100% Virgin HDPE",
-                  "90% Shade Protection",
+                  "Available in Multiple Colors",
                   "Premium UV Stabilized",
-                  "Maximum Heat Reduction",
                   "Weather Resistant",
-                  "Heavy Duty Construction",
+                  "Excellent Air Ventilation",
                   "Long Service Life",
-                  "Reusable & Eco Friendly",
+                  "Easy Installation",
+                  "Eco Friendly & Reusable",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-4">
                     <CheckCircle2 size={20} className="mt-1 text-[#7A9F2A]" />
@@ -222,7 +238,6 @@ export default function TapeNet90Page() {
       </section>
 
       {/* Technical Specifications */}
-
       <section className="mt-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="overflow-hidden rounded-[34px] border border-[#dce6c5] bg-white shadow-lg">
@@ -234,20 +249,23 @@ export default function TapeNet90Page() {
 
             <div className="divide-y divide-[#edf2e3]">
               {[
-                ["Product Name", "90% 6 Gauge Tape Net"],
+                ["Product Name", "Multi-Color Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Shade Percentage", "90%"],
-                ["Gauge", "6 Gauge"],
+                ["Color Options", "Green, Black, White, Blue & Custom"],
+                ["Shade Percentage", "35% - 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
                 ["Length", "50 Meter Roll"],
-                ["Colour", "Green / Black / White"],
                 ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
+                [
+                  "Application",
+                  "Agriculture, Nursery, Greenhouse & Industrial",
+                ],
                 ["Minimum Order Quantity", "5000 Square Meter"],
               ].map(([title, value]) => (
                 <div
                   key={title}
-                  className="grid grid-cols-2 px-8 py-5 transition hover:bg-[#fafcf7]"
+                  className="grid grid-cols-2 px-8 py-5 hover:bg-[#fafcf7]"
                 >
                   <div className="font-medium text-neutral-500">{title}</div>
 
@@ -260,7 +278,6 @@ export default function TapeNet90Page() {
       </section>
 
       {/* CTA */}
-
       <section className="mt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <div className="overflow-hidden rounded-[34px] bg-gradient-to-br from-[#072B18] via-[#0B3A21] to-[#051A0F] p-12 text-white shadow-2xl">
@@ -275,10 +292,10 @@ export default function TapeNet90Page() {
                 </h2>
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-                  Get factory-direct pricing for{" "}
-                  <strong>90% 6 Gauge Tape Net</strong>. Contact our sales team
-                  for quotations, custom sizes, transportation, and delivery
-                  across India.
+                  Get factory-direct pricing for our premium{" "}
+                  <strong>Multi-Color Shade Nets</strong>. Available in
+                  different colors, widths and shade percentages with custom
+                  manufacturing options.
                 </p>
               </div>
 
@@ -301,6 +318,7 @@ export default function TapeNet90Page() {
           </div>
         </div>
       </section>
+
       {/* Related Products */}
       <section className="mt-16 mb-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -314,20 +332,20 @@ export default function TapeNet90Page() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-neutral-600">
-              Explore our premium range of agricultural tape nets designed for
-              different shade requirements and farming applications.
+              Explore our premium range of agricultural shade nets designed for
+              different farming, nursery and commercial applications.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
-                title: "50% 6 Gauge Tape Net",
+                title: "50% Shade Net",
                 href: "/products/tape-nets/50-percent",
                 image: "/products/50-tape-net1.jpeg",
               },
               {
-                title: "75% 6 Gauge Tape Net",
+                title: "75% Shade Net",
                 href: "/products/tape-nets/75-percent",
                 image: "/products/75-tape-net1.jpeg",
               },
@@ -357,9 +375,9 @@ export default function TapeNet90Page() {
                   </h3>
 
                   <p className="mt-3 leading-7 text-neutral-600">
-                    Premium HDPE tape net manufactured with UV stabilized raw
-                    material for excellent durability, weather resistance, and
-                    long-lasting agricultural performance.
+                    Premium HDPE shade net manufactured with UV stabilized raw
+                    material for excellent durability and long-lasting outdoor
+                    performance.
                   </p>
 
                   <div className="mt-6 inline-flex items-center gap-2 font-semibold text-[#6D9224] transition-all group-hover:gap-3">

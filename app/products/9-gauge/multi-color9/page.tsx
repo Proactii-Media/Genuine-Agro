@@ -3,27 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  ChevronRight,
-  Phone,
-  Mail,
-  Share2,
-  Star,
-  CheckCircle2,
-} from "lucide-react";
+import { Phone, Mail, Share2, Star } from "lucide-react";
 import { useState } from "react";
+import { ChevronRight, CheckCircle2 } from "lucide-react";
 
-const images = [
-  "/products/nursery.webp",
-  "/products/nursery-net2.webp",
-  "/products/nursery-net3.jpg",
-];
+const images = ["/products/multi-color9.jpeg", "/products/multi-color92.jpeg"];
 
-export default function NurseryShadeNetPage() {
+export default function MultiColorShadeNetPage() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
     <main className="bg-[#f7f8f5] pt-28 pb-20">
+      {/* Product Section */}
       <section className="mx-auto max-w-6xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -34,17 +25,30 @@ export default function NurseryShadeNetPage() {
           <div className="grid lg:grid-cols-[420px_1fr]">
             {/* LEFT IMAGE */}
             <div className="border-r border-[#dce6c5] p-5">
-              <div className="overflow-hidden rounded-[24px] bg-[#f8faf4]">
+              <div className="relative overflow-hidden rounded-[24px] bg-[#f8faf4]">
                 <Image
                   src={selectedImage}
-                  alt="Nursery Shade Net"
+                  alt="Multi-Color Shade Net"
                   width={700}
                   height={700}
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
+
+                {/* Badge */}
+                <div className="absolute bottom-5 left-5 z-20 rounded-3xl bg-white/95 px-6 py-5 shadow-xl backdrop-blur">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    AVAILABLE IN
+                  </p>
+
+                  <h3 className="text-3xl font-extrabold text-[#95C11F]">
+                    Multi
+                  </h3>
+
+                  <p className="text-lg text-gray-700">Color Options</p>
+                </div>
               </div>
 
-              {/* Thumbnails */}
+              {/* Thumbnail */}
               <div className="mt-4 flex gap-3">
                 {images.map((img, index) => (
                   <button
@@ -69,24 +73,27 @@ export default function NurseryShadeNetPage() {
               </div>
             </div>
 
-            {/* RIGHT */}
+            {/* RIGHT CONTENT */}
             <div className="p-6 lg:p-8">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[#edf5db] px-3 py-1.5">
                     <Star size={15} className="fill-[#7A9F2A] text-[#7A9F2A]" />
+
                     <span className="text-sm font-semibold text-[#072B18]">
                       Premium Product
                     </span>
                   </div>
 
                   <h1 className="text-3xl font-bold text-[#24301D]">
-                    Nursery Shade Net
+                    Multi-Color Shade Net
                   </h1>
 
-                  <p className="mt-2 text-base text-neutral-600">
-                    Premium UV Stabilized HDPE Shade Net for Nurseries & Plant
-                    Protection
+                  <p className="mt-3 max-w-xl leading-7 text-neutral-600">
+                    Premium quality HDPE shade net available in multiple
+                    attractive colors for agriculture, nurseries, greenhouses,
+                    landscaping, terrace gardens and commercial shading
+                    applications.
                   </p>
                 </div>
 
@@ -96,6 +103,7 @@ export default function NurseryShadeNetPage() {
               </div>
 
               {/* Quantity */}
+
               <div className="mt-6 flex flex-wrap gap-3">
                 <input
                   placeholder="Quantity"
@@ -113,16 +121,15 @@ export default function NurseryShadeNetPage() {
               </div>
 
               {/* Specifications */}
+
               <div className="mt-8 overflow-hidden rounded-2xl border border-[#e6edd6]">
                 {[
-                  ["Business Type", "Manufacturer & Exporter"],
-                  ["Product", "Nursery Shade Net"],
+                  ["Business Type", "Manufacturer, Exporter"],
                   ["Material", "100% Virgin HDPE"],
-                  ["Shade", "35% - 90%"],
-                  ["Colour", "Green / Black"],
-                  ["UV Stabilized", "Yes"],
+                  ["Colors", "Green, Black, White, Blue & Custom"],
+                  ["UV Protection", "Premium UV Stabilized"],
                   ["Width", "1m - 6.2m"],
-                  ["Roll Length", "50 Meter"],
+                  ["Application", "Agriculture & Industrial"],
                 ].map(([title, value]) => (
                   <div
                     key={title}
@@ -140,6 +147,7 @@ export default function NurseryShadeNetPage() {
               </div>
 
               {/* Buttons */}
+
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="tel:+919999999999"
@@ -176,31 +184,26 @@ export default function NurseryShadeNetPage() {
 
               <div className="space-y-6 p-8 leading-8 text-neutral-600">
                 <p>
-                  Genuine Agro's <strong>Nursery Shade Net</strong> is
-                  manufactured using premium quality UV stabilized HDPE tapes to
-                  provide optimum protection for young plants, saplings and
-                  seedlings. It effectively filters sunlight while maintaining
-                  proper ventilation and humidity for healthy plant growth.
+                  Genuine Agro's <strong>Multi-Color Shade Net</strong> is
+                  manufactured using premium quality 100% Virgin HDPE and
+                  advanced UV stabilizers. It is designed to provide effective
+                  shade, long-lasting durability, and an attractive appearance
+                  for both agricultural and commercial applications.
                 </p>
 
                 <p>
-                  Our nursery shade nets help reduce excessive heat, prevent
-                  scorching of delicate plants and create an ideal environment
-                  for seed germination, propagation and nursery cultivation.
+                  Available in multiple vibrant colors including Green, Black,
+                  White, Blue and custom combinations, these shade nets improve
+                  crop protection while enhancing the aesthetics of nurseries,
+                  greenhouses, gardens, resorts, parking areas, terraces and
+                  outdoor spaces.
                 </p>
 
                 <p>
-                  Designed with high tensile strength and excellent weather
-                  resistance, these knitted shade nets offer long outdoor life,
-                  easy installation and minimal maintenance for commercial
-                  nurseries and horticultural applications.
-                </p>
-
-                <p>
-                  Available in multiple shade percentages, Genuine Agro Nursery
-                  Shade Nets are suitable for flower nurseries, fruit plants,
-                  vegetable seedlings, medicinal plants, ornamental plants and
-                  commercial horticulture.
+                  The UV stabilized construction ensures excellent weather
+                  resistance, reduced heat buildup, improved ventilation and a
+                  long outdoor service life even under harsh environmental
+                  conditions.
                 </p>
               </div>
             </div>
@@ -214,15 +217,13 @@ export default function NurseryShadeNetPage() {
               <div className="mt-8 space-y-5">
                 {[
                   "100% Virgin HDPE",
-                  "UV Stabilized",
-                  "Ideal for Nurseries",
-                  "Protects Young Plants",
-                  "Better Seed Germination",
-                  "Heat Reduction",
-                  "Excellent Air Circulation",
+                  "Available in Multiple Colors",
+                  "Premium UV Stabilized",
                   "Weather Resistant",
-                  "Easy Installation",
+                  "Excellent Air Ventilation",
                   "Long Service Life",
+                  "Easy Installation",
+                  "Eco Friendly & Reusable",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-4">
                     <CheckCircle2 size={20} className="mt-1 text-[#7A9F2A]" />
@@ -248,22 +249,23 @@ export default function NurseryShadeNetPage() {
 
             <div className="divide-y divide-[#edf2e3]">
               {[
-                ["Product Name", "Nursery Shade Net"],
+                ["Product Name", "Multi-Color Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Colour", "Green / Black"],
-                ["Shade Percentage", "35%, 50%, 75%, 90%"],
-                ["UV Stabilized", "Yes"],
-                ["Knitting Type", "Warp Knitted"],
+                ["Color Options", "Green, Black, White, Blue & Custom"],
+                ["Shade Percentage", "35% - 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter"],
-                ["Weather Resistance", "Excellent"],
-                ["Application", "Plant Nurseries & Horticulture"],
+                ["Length", "50 Meter Roll"],
+                ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
+                [
+                  "Application",
+                  "Agriculture, Nursery, Greenhouse & Industrial",
+                ],
                 ["Minimum Order Quantity", "5000 Square Meter"],
               ].map(([title, value]) => (
                 <div
                   key={title}
-                  className="grid grid-cols-2 px-8 py-5 transition hover:bg-[#fafcf7]"
+                  className="grid grid-cols-2 px-8 py-5 hover:bg-[#fafcf7]"
                 >
                   <div className="font-medium text-neutral-500">{title}</div>
 
@@ -286,14 +288,14 @@ export default function NurseryShadeNetPage() {
                 </span>
 
                 <h2 className="mt-5 text-4xl font-bold">
-                  Looking for Premium Nursery Shade Nets?
+                  Looking for Bulk Orders?
                 </h2>
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-                  We manufacture premium quality Nursery Shade Nets using virgin
-                  HDPE with advanced UV stabilization. Contact our team for
-                  factory-direct pricing, customized sizes and reliable delivery
-                  across India.
+                  Get factory-direct pricing for our premium{" "}
+                  <strong>Multi-Color Shade Nets</strong>. Available in
+                  different colors, widths and shade percentages with custom
+                  manufacturing options.
                 </p>
               </div>
 
@@ -330,26 +332,22 @@ export default function NurseryShadeNetPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-neutral-600">
-              Explore more premium agricultural netting solutions designed for
-              nurseries, greenhouses and modern farming applications.
+              Explore our premium range of agricultural shade nets designed for
+              different farming, nursery and commercial applications.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
-                title: "Greenhouse Shade Net",
-                href: "/products/tape-nets/greenhouse-shade-net",
-                image: "/products/greenhouse-net1.jpg",
-                description:
-                  "Premium UV stabilized HDPE Greenhouse Shade Net that provides excellent temperature control, ventilation and long-lasting protection for protected cultivation.",
+                title: "50% Shade Net",
+                href: "/products/tape-nets/50-percent",
+                image: "/products/50-tape-net1.jpeg",
               },
               {
-                title: "Black Shade Net",
-                href: "/products/tape-nets/black-shade-net",
-                image: "/products/black-shade-net1.jpg",
-                description:
-                  "High-quality Black Shade Net manufactured from virgin HDPE for superior heat reduction, UV protection and durable agricultural performance.",
+                title: "75% Shade Net",
+                href: "/products/tape-nets/75-percent",
+                image: "/products/75-tape-net1.jpeg",
               },
             ].map((item) => (
               <Link
@@ -377,7 +375,9 @@ export default function NurseryShadeNetPage() {
                   </h3>
 
                   <p className="mt-3 leading-7 text-neutral-600">
-                    {item.description}
+                    Premium HDPE shade net manufactured with UV stabilized raw
+                    material for excellent durability and long-lasting outdoor
+                    performance.
                   </p>
 
                   <div className="mt-6 inline-flex items-center gap-2 font-semibold text-[#6D9224] transition-all group-hover:gap-3">

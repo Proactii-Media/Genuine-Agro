@@ -14,12 +14,12 @@ import {
 import { useState } from "react";
 
 const images = [
-  "/products/black-shade-net1.jpg",
-  "/products/black-shade-net2.jpg",
-  "/products/black-shade-net3.jpg",
+  "/products/greenhouse-net1.jpg",
+  "/products/greenhouse-net2.jpg",
+  "/products/greenhouse-net3.jpg",
 ];
 
-export default function BlackShadeNetPage() {
+export default function GreenhouseShadeNetPage() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
@@ -37,11 +37,28 @@ export default function BlackShadeNetPage() {
               <div className="overflow-hidden rounded-[24px] bg-[#f8faf4]">
                 <Image
                   src={selectedImage}
-                  alt="Black Shade Net"
+                  alt="Greenhouse Shade Net"
                   width={700}
                   height={700}
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
+              </div>
+
+              {/* Shade Badge */}
+              <div className="absolute left-55 bottom-28 z-20">
+                <div className="rounded-2xl bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                    SHADE LEVEL
+                  </p>
+
+                  <h3 className="mt-1 text-4xl font-extrabold leading-none text-[#95C11F]">
+                    75%
+                  </h3>
+
+                  <p className="mt-1 text-sm font-medium text-gray-700">
+                    Protection
+                  </p>
+                </div>
               </div>
 
               {/* Thumbnails */}
@@ -81,11 +98,12 @@ export default function BlackShadeNetPage() {
                   </div>
 
                   <h1 className="text-3xl font-bold text-[#24301D]">
-                    Black Shade Net
+                    Greenhouse Shade Net
                   </h1>
 
                   <p className="mt-2 text-base text-neutral-600">
-                    UV Stabilized HDPE Agricultural Shade Net
+                    Premium UV Stabilized HDPE Shade Net for Greenhouses &
+                    Polyhouses
                   </p>
                 </div>
 
@@ -115,10 +133,10 @@ export default function BlackShadeNetPage() {
               <div className="mt-8 overflow-hidden rounded-2xl border border-[#e6edd6]">
                 {[
                   ["Business Type", "Manufacturer & Exporter"],
-                  ["Product", "Black Shade Net"],
+                  ["Product", "Greenhouse Shade Net"],
                   ["Material", "100% Virgin HDPE"],
                   ["Shade", "35% - 90%"],
-                  ["Colour", "Black"],
+                  ["Colour", "Green / Black / White"],
                   ["UV Stabilized", "Yes"],
                   ["Width", "1m - 6.2m"],
                   ["Roll Length", "50 Meter"],
@@ -175,31 +193,32 @@ export default function BlackShadeNetPage() {
 
               <div className="space-y-6 p-8 leading-8 text-neutral-600">
                 <p>
-                  <strong>Black Shade Net</strong> is manufactured from premium
-                  quality UV stabilized HDPE tapes to provide effective
-                  protection against harsh sunlight while maintaining proper air
-                  circulation. It creates a controlled environment that helps
-                  improve crop growth and reduce heat stress.
+                  Genuine Agro's <strong>Greenhouse Shade Net</strong> is
+                  manufactured using premium quality UV stabilized HDPE Shades
+                  to create an ideal environment for protected cultivation. It
+                  effectively reduces excessive sunlight while maintaining
+                  optimum ventilation and temperature inside greenhouses and
+                  polyhouses.
                 </p>
 
                 <p>
-                  Designed for agricultural and horticultural applications, our
-                  shade nets offer excellent tensile strength, weather
-                  resistance and long service life. They are lightweight, easy
-                  to install and suitable for year-round outdoor use.
+                  Designed for commercial agriculture, floriculture and nursery
+                  applications, the net minimizes heat stress, protects delicate
+                  crops and promotes healthy plant growth throughout the year.
                 </p>
 
                 <p>
-                  These nets are widely used in nurseries, greenhouses,
-                  floriculture farms, vegetable cultivation, fruit orchards,
-                  terrace gardens, polyhouses and industrial shade structures.
+                  Its lightweight knitted construction provides superior
+                  strength, tear resistance and long outdoor life. The net is
+                  easy to install and requires minimal maintenance, making it a
+                  reliable solution for modern farming.
                 </p>
 
                 <p>
-                  Available in multiple shade percentages such as 35%, 50%, 75%,
-                  and 90%, Genuine Agro Black Shade Nets provide the ideal
-                  balance of sunlight filtration and temperature control for
-                  different crops and applications.
+                  Available in multiple shade percentages, Genuine Agro
+                  Greenhouse Shade Nets are suitable for vegetables, flowers,
+                  herbs, fruits and high-value crops grown under controlled
+                  conditions.
                 </p>
               </div>
             </div>
@@ -212,16 +231,16 @@ export default function BlackShadeNetPage() {
 
               <div className="mt-8 space-y-5">
                 {[
-                  "100% Virgin HDPE Material",
+                  "100% Virgin HDPE",
                   "UV Stabilized",
-                  "Excellent Shade Protection",
+                  "Greenhouse Application",
+                  "Temperature Control",
+                  "Excellent Air Circulation",
+                  "High Tensile Strength",
                   "Weather Resistant",
-                  "Lightweight & Durable",
-                  "Easy Installation",
                   "Long Service Life",
+                  "Easy Installation",
                   "Eco Friendly",
-                  "Tear Resistant",
-                  "Low Maintenance",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-4">
                     <CheckCircle2 size={20} className="mt-1 text-[#7A9F2A]" />
@@ -247,17 +266,17 @@ export default function BlackShadeNetPage() {
 
             <div className="divide-y divide-[#edf2e3]">
               {[
-                ["Product Name", "Black Shade Net"],
+                ["Product Name", "Greenhouse Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Colour", "Black"],
+                ["Colour", "Green / Black / White"],
                 ["Shade Percentage", "35%, 50%, 75%, 90%"],
                 ["UV Stabilized", "Yes"],
+                ["Knitting Type", "Warp Knitted"],
                 ["Width", "1 Meter - 6.2 Meter"],
                 ["Roll Length", "50 Meter"],
-                ["Mesh Type", "Knitted"],
+                ["Temperature Reduction", "Excellent"],
                 ["Weather Resistance", "Excellent"],
-                ["Water Resistance", "Yes"],
-                ["Application", "Agriculture, Nursery, Greenhouse"],
+                ["Application", "Greenhouses & Polyhouses"],
                 ["Business Type", "Manufacturer & Exporter"],
                 ["Minimum Order Quantity", "5000 Square Meter"],
               ].map(([title, value]) => (
@@ -286,13 +305,14 @@ export default function BlackShadeNetPage() {
                 </span>
 
                 <h2 className="mt-5 text-4xl font-bold">
-                  Looking for Bulk Orders?
+                  Looking for Greenhouse Shade Nets?
                 </h2>
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-                  Get factory-direct pricing for premium Black Shade Nets.
-                  Contact our sales team for quotations, custom widths, shade
-                  percentages and nationwide delivery.
+                  Get factory-direct pricing on premium Greenhouse Shade Nets
+                  manufactured using virgin HDPE with advanced UV stabilization.
+                  We offer customized shade percentages, widths and bulk supply
+                  across India.
                 </p>
               </div>
 
@@ -329,19 +349,19 @@ export default function BlackShadeNetPage() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-neutral-600">
-              Discover more premium shade net solutions designed for
-              agriculture, nurseries, greenhouses and industrial applications.
+              Explore more premium agricultural netting solutions designed for
+              protected cultivation, nurseries and modern farming applications.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
-                title: "Greenhouse Shade Net",
-                href: "/products/tape-nets/greenhouse-shade-net",
-                image: "/products/greenhouse-net1.jpg",
+                title: "Black Shade Net",
+                href: "/products/tape-nets/black-shade-net",
+                image: "/products/black-shade-net1.jpg",
                 description:
-                  "Premium UV stabilized HDPE Greenhouse Shade Net that provides excellent temperature control, ventilation and long-lasting protection for protected cultivation.",
+                  "Premium UV stabilized HDPE Black Shade Net offering superior heat reduction, excellent durability and reliable crop protection.",
               },
               {
                 title: "Nursery Shade Net",

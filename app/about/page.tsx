@@ -30,7 +30,7 @@ const WHY_CHOOSE = [
   {
     title: "Superior Quality",
     description:
-      "Premium Shade Nets and Tape Nets manufactured using high-quality UV stabilized materials.",
+      "Premium Shade Nets and Shade Nets manufactured using high-quality UV stabilized materials.",
   },
   {
     title: "Trusted by Farmers",
@@ -238,7 +238,7 @@ export default function AboutPage() {
               <motion.div variants={itemVariants} className="space-y-4">
                 <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
                 <p className="text-lg leading-relaxed text-gray-600">
-                  We specialize in supplying high-quality Shade Nets and Tape
+                  We specialize in supplying high-quality Shade Nets and Shade
                   Nets that are designed to protect crops from harsh sunlight,
                   wind, birds, and changing weather conditions.
                 </p>
@@ -305,7 +305,7 @@ export default function AboutPage() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Our mission is to provide premium-quality Shade Nets and Tape
+                Our mission is to provide premium-quality Shade Nets and Shade
                 Nets that help protect crops, improve growing conditions, and
                 maximize farm productivity with reliable products, excellent
                 customer service, and cost-effective solutions.
@@ -484,7 +484,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="mx-auto mt-8 max-w-4xl text-lg leading-9 text-white/90"
           >
-            Our Shade Nets and Tape Nets are designed to provide effective
+            Our Shade Nets and Shade Nets are designed to provide effective
             protection against excessive sunlight, heat, wind, and external
             damage. Manufactured using premium UV-stabilized materials, they
             create an ideal growing environment for healthier crops, higher
@@ -516,7 +516,7 @@ export default function AboutPage() {
             className="mt-12 flex flex-wrap justify-center gap-5"
           >
             <Link
-              href="/products/tape-nets"
+              href="/products/Shade-nets"
               className="group inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-semibold text-[#0B3A21] transition-all duration-300 hover:bg-[#a4cc2e] hover:-translate-y-1 hover:shadow-lg"
             >
               View Our Products
