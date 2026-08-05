@@ -9,21 +9,21 @@ const variants = [
   {
     title: "50% Shade Net",
     image: "/products/50-Shade-net1.jpeg",
-    href: "/products/Shade-nets/50-percent",
+    href: "/products/6-gauge/50-percent",
     description:
       "Perfect balance between sunlight and protection for multiple crops.",
   },
   {
     title: "75% Shade Net",
     image: "/products/75-tape-net1.jpeg",
-    href: "/products/tape-nets/75-percent",
+    href: "/products/6-gauge/75-percent",
     description:
       "Excellent shade for nurseries, greenhouses and delicate plants.",
   },
   {
     title: "90% Shade Net",
     image: "/products/90-tape-net2.jpeg",
-    href: "/products/tape-nets/90-percent",
+    href: "/products/6-gauge/90-percent",
     description:
       "Maximum shade and temperature reduction for specialized applications.",
   },

@@ -126,7 +126,10 @@ export default function MultiColorShadeNetPage() {
                 {[
                   ["Business Type", "Manufacturer, Exporter"],
                   ["Material", "100% Virgin HDPE"],
-                  ["Colors", "Green, Black, White, Blue & Custom"],
+                  [
+                    "Colors",
+                    "Multiple Color Comnbinations & Custom Color Combinations on demand",
+                  ],
                   ["UV Protection", "Premium UV Stabilized"],
                   ["Width", "1m - 6.2m"],
                   ["Application", "Agriculture & Industrial"],
@@ -251,7 +254,10 @@ export default function MultiColorShadeNetPage() {
               {[
                 ["Product Name", "Multi-Color Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Color Options", "Green, Black, White, Blue & Custom"],
+                [
+                  "Color Options",
+                  "Multiple Color Comnbinations & Custom Color Combinations on demand",
+                ],
                 ["Shade Percentage", "35% - 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
                 ["Length", "50 Meter Roll"],

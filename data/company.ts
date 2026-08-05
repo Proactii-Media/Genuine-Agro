@@ -3,7 +3,7 @@ export const company = {
   shortName: "Genuine Agro",
   tagline: "Shaping Growth Under Shade",
   phone: "+91 98765 43210",
-  email: "enquiry@genuineagroshade.com",
+  email: "info@genuineagroshadenet.com",
   owner: "Genuine Agro",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "919876543210",
   address: {
@@ -11,9 +11,9 @@ export const company = {
     line2: "Opposite Saloni Paper Machine Pvt Ltd",
     city: "Vapi",
     state: "Gujarat",
-    pincode: "396193",
+    pincode: "396195",
     country: "India",
-    full: "PLOT NO 4301 B, Opposite Saloni Paper Machine Pvt Ltd, Vapi, Gujarat, 396193, India",
+    full: "PLOT NO 4301 B, Opposite Saloni Paper Machine Pvt Ltd, Vapi, Gujarat, 396195, India",
   },
   social: {
     facebook: "https://facebook.com",

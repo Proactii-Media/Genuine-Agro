@@ -2,8 +2,67 @@
 
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false);
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    product: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          product: form.product,
+          message: form.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
+      alert("Inquiry sent successfully!");
+
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        product: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong!");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <>
       <main className="pt-24">
@@ -85,45 +144,86 @@ export default function ContactPage() {
                 Send an Inquiry
               </h3>
 
-              <form className="mt-8 space-y-5">
+              <form onSubmit={sendEmail} className="mt-8 space-y-5">
                 <input
                   type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
                   placeholder="Your Name"
                   className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none transition focus:border-[#a4cc2e]"
+                  required
                 />
 
                 <input
                   type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="Email Address"
                   className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none transition focus:border-[#a4cc2e]"
+                  required
                 />
 
                 <input
                   type="tel"
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
                   placeholder="Phone Number"
                   className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none transition focus:border-[#a4cc2e]"
+                  required
                 />
 
-                <select className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none">
-                  <option>Select Product</option>
+                <select
+                  name="product"
+                  value={form.product}
+                  onChange={handleChange}
+                  required
+                  className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none"
+                >
+                  <option value="">Select Product</option>
 
-                  <option>35% Shade Net</option>
+                  <optgroup label="6 Gauge">
+                    <option value="50% Shade Net">50% Shade Net</option>
 
-                  <option>50% Shade Net</option>
+                    <option value="75% Shade Net">75% Shade Net</option>
 
-                  <option>75% Shade Net</option>
+                    <option value="90% Shade Net">90% Shade Net</option>
+                  </optgroup>
 
-                  <option>90% Shade Net</option>
+                  <optgroup label="9 Gauge">
+                    <option value="50% Black Shade Net">
+                      50% Black Shade Net
+                    </option>
+
+                    <option value="75% Greenhouse Shade Net">
+                      75% Greenhouse Shade Net
+                    </option>
+
+                    <option value="90% Nursery Shade Net">
+                      90% Nursery Shade Net
+                    </option>
+                  </optgroup>
                 </select>
 
                 <textarea
                   rows={5}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
                   placeholder="Tell us about your requirements..."
                   className="w-full rounded-xl border border-gray-200 px-5 py-4 outline-none transition focus:border-[#a4cc2e]"
+                  required
                 />
 
-                <button className="flex items-center rounded-full bg-[#a4cc2e] px-8 py-4 font-semibold text-[#16331d] transition hover:bg-[#95be28]">
-                  Send Inquiry
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex items-center rounded-full bg-[#a4cc2e] px-8 py-4 font-semibold text-[#16331d] transition hover:bg-[#95be28] disabled:opacity-50"
+                >
+                  {loading ? "Sending..." : "Send Inquiry"}
+
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
               </form>

@@ -37,12 +37,13 @@ export default function Testimonials() {
           </span>
 
           <h2 className="mt-6 text-4xl font-bold text-[#1d3b22] lg:text-5xl">
-            Trusted by Farmers Across India
+            Trusted by Farmers and Commercial Partners Across India
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-gray-600">
-            We take pride in delivering premium agricultural protection
-            solutions that help farmers achieve better productivity.
+            We Take Pride in Delivering Top Quality shade Nets that Provide
+            Agriculture Protection , Industrial and Commercial Solution ,
+            Helping Our Partners Achieving Expected Outcomes.
           </p>
         </div>
 
@@ -67,7 +68,9 @@ export default function Testimonials() {
                 <Quote className="h-8 w-8 text-[#a4cc2e]/30" />
               </div>
 
-              <p className="leading-8 text-gray-600">&ldquo;{item.review}&rdquo;</p>
+              <p className="leading-8 text-gray-600">
+                &ldquo;{item.review}&rdquo;
+              </p>
 
               <div className="mt-8 flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#eef6df] text-lg font-bold text-[#6f9122]">

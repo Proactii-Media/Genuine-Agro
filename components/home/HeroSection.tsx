@@ -17,18 +17,17 @@ const SLIDER_CONTENT = [
     id: 1,
     badge: "Premium Solutions",
     heading: "Protect Your Crops.\nMaximize Your Growth.",
-    description:
-      "Premium Quality Shade Nets & Shade Nets for Modern Agriculture.",
+    description: "Premium Quality Shade Nets for Modern Agriculture.",
     buttonText: "Explore Products",
     buttonLink: "/products",
-    image: "/products/black-shade-net3.jpg",
+    image: "/products/greenhouse-net1.jpg",
   },
   {
     id: 2,
     badge: "Trusted Partner",
     heading: "Your Trusted Partner in Agricultural Protection",
     description:
-      "Providing durable, UV-stabilized Shade Nets and Shade Nets for farms, nurseries, and greenhouses.",
+      "Providing durable, UV-stabilized Shade Nets for farms, nurseries, greenhouses, and commercial applications.",
     buttonText: "Get a Quote",
     buttonLink: "/contact",
     image: "/hero10.jpg",
@@ -44,7 +43,7 @@ const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-      delayChildren: 0.3,
+      delayChildren: 0.2,
     },
   },
 };

@@ -43,7 +43,8 @@ export default function BlackShadeNetPage() {
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
               </div>
-              {/* 50% Shade Badge */}
+              
+              {/* Shade Badge */}
               <div className="absolute left-55 bottom-28 z-20">
                 <div className="rounded-2xl bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md">
                   <p className="text-xs font-bold uppercase tracking-wider text-gray-500">

@@ -180,7 +180,7 @@ export default function QualityPolicyPage() {
 
             <div className="relative h-[420px] overflow-hidden rounded-3xl">
               <Image
-                src="/manufacture.jpg"
+                src="/machine.png"
                 alt="Manufacturing"
                 fill
                 className="object-cover"

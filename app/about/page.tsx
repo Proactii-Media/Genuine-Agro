@@ -133,7 +133,7 @@ export default function AboutPage() {
         {/* Background */}
         <div className="absolute inset-0">
           <Image
-            src="/construction2.png"
+            src="/agri1.jpg"
             alt="About Genuine Agro"
             fill
             priority
@@ -180,7 +180,7 @@ export default function AboutPage() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mt-6 text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-6xl"
             >
-              Trusted Agricultural Solutions
+              Trusted Agricultural and Industrial Solutions
             </motion.h1>
 
             {/* Description */}
@@ -217,7 +217,7 @@ export default function AboutPage() {
               <div className="relative overflow-hidden rounded-3xl border border-[#a4cc2e]/20 bg-gradient-to-br from-[#a4cc2e]/10 to-[#ffb800]/5 p-1 shadow-2xl">
                 <div className="relative aspect-square overflow-hidden rounded-[26px]">
                   <Image
-                    src="/industrial.png"
+                    src="/constrution.png"
                     alt="About Genuine Agro"
                     fill
                     className="object-cover"
@@ -238,19 +238,25 @@ export default function AboutPage() {
               <motion.div variants={itemVariants} className="space-y-4">
                 <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
                 <p className="text-lg leading-relaxed text-gray-600">
-                  We specialize in supplying high-quality Shade Nets and Shade
-                  Nets that are designed to protect crops from harsh sunlight,
-                  wind, birds, and changing weather conditions.
+                  Our story : We Began our Shade Net Manufacturing Journey in
+                  year 2017 , Since then we have grown from Strength to Strength
+                  in Manufacturing and delivering best in class Shade Nets of
+                  Various Grades and Types that Finds Its application Across
+                  Agriculture to Industrial and commercial Means. We specialize
+                  in supplying high-quality Shade Nets that are designed to
+                  protect crops from harsh sunlight, wind, birds, and changing
+                  weather conditions.
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants} className="space-y-4">
                 <p className="text-lg leading-relaxed text-gray-600">
-                  Our products are manufactured using premium UV-stabilized
-                  materials to ensure long-lasting performance and maximum
-                  durability. Whether you own a small farm, greenhouse, nursery,
-                  or large agricultural project, we provide dependable solutions
-                  tailored to your requirements.
+                  Our products are manufactured using High Quality HDPE raw
+                  materials with UV-Stabilizer to ensure long-lasting
+                  performance and maximum durability. Whether you own a Small
+                  farm, greenhouse, nursery,large agricultural projects or
+                  Industrial and Commercial requirements , we provide dependable
+                  solutions tailored to your requirements.
                 </p>
               </motion.div>
 
@@ -261,12 +267,39 @@ export default function AboutPage() {
                 <p className="text-lg leading-relaxed text-gray-600">
                   With a customer-first approach, competitive pricing, and a
                   commitment to quality, Genuine Agro Shade Net has become a
-                  trusted partner for growers seeking reliable agricultural
-                  netting solutions.
+                  trusted partner for Growers and Industry seeking reliable
+                  agricultural and Other Specific Netting Solutions.
                 </p>
               </motion.div>
             </motion.div>
           </div>
+
+          {/* Our Core Competency */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mb-24 rounded-3xl border border-[#a4cc2e]/20 bg-gradient-to-br from-[#f8faf5] to-white p-8 lg:p-12 shadow-sm"
+          >
+            <div className="max-w-5xl">
+              <div className="h-1.5 w-16 bg-[#a4cc2e]" />
+
+              <h2 className="mt-6 text-4xl font-bold text-gray-900">
+                Our Core Competency
+              </h2>
+
+              <p className="mt-6 text-lg leading-relaxed text-gray-600">
+                With best-in-class machinery in the shade net industry and an
+                experienced, qualified team, we strive to manufacture
+                top-quality Shade Nets that serve various applications, from
+                agriculture to commercial needs. With sustained focus and
+                continuous efforts, we have established a reputation in the
+                shade net manufacturing industry as a trusted and reliable
+                supplier of high-grade Shade Nets.
+              </p>
+            </div>
+          </motion.div>
 
           {/* Vision & Mission */}
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -305,10 +338,12 @@ export default function AboutPage() {
                 </h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                Our mission is to provide premium-quality Shade Nets and Shade
-                Nets that help protect crops, improve growing conditions, and
-                maximize farm productivity with reliable products, excellent
-                customer service, and cost-effective solutions.
+                Our mission is to provide premium-quality Shade Nets that Serves
+                the Purpose across a spectrum of Applications from Agriculture
+                to Commercial Usage. Helping our agriculturists to protect
+                crops, improve growing conditions, and maximize farm
+                productivity with reliable products, excellent service, and
+                cost-effective solutions.
               </p>
             </motion.div>
           </div>

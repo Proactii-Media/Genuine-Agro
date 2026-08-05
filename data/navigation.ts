@@ -12,8 +12,5 @@ export const footerLinks = {
     { href: "/products", label: "Products" },
     { href: "/contact", label: "Get Quote" },
   ],
-  products: [
-    { href: "/products/shade-net", label: "Shade Net" },
-    { href: "/products/tape-net", label: "Tape Net" },
-  ],
+  products: [{ href: "/products/shade-net", label: "Shade Net" }],
 };

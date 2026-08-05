@@ -31,7 +31,7 @@ const APPLICATIONS = [
   },
   {
     title: "Vegetable Farming",
-    image: "/agri3.jpg",
+    image: "/products/vegetable.jpg",
     details: [
       "Improves Crop Yield",
       "Maintains Moisture",
@@ -87,6 +87,18 @@ const APPLICATIONS = [
       "Lightweight & Durable",
       "Easy Installation",
       "Premium Quality",
+    ],
+  },
+  {
+    title: "Outdoor Shade Net",
+    image: "/hero10.jpg",
+    details: [
+      "Perfect for Patios & Terraces",
+      "Suitable for Parking Areas",
+      "Blocks Harsh Sunlight",
+      "UV Protected HDPE",
+      "Strong & Durable",
+      "Easy Installation",
     ],
   },
   {

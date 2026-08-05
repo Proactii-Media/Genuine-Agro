@@ -172,7 +172,7 @@ export default function Navbar() {
                             initial={{ opacity: 0, x: 10 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 10 }}
-                            className="absolute left-[35%] top-14 w-64 rounded-2xl border border-neutral-200 bg-white shadow-2xl"
+                            className="absolute left-[5%] top-14 w-64 rounded-2xl border border-neutral-200 bg-white shadow-2xl"
                           >
                             {item.children.map((child) => (
                               <div
@@ -199,7 +199,7 @@ export default function Navbar() {
                                       initial={{ opacity: 0, x: 10 }}
                                       animate={{ opacity: 1, x: 0 }}
                                       exit={{ opacity: 0, x: 10 }}
-                                      className="absolute left-[50%] top-14 w-72 rounded-2xl border border-neutral-200 bg-white shadow-2xl"
+                                      className="absolute left-[100%] top-0 w-72 rounded-2xl border border-neutral-200 bg-white shadow-2xl"
                                     >
                                       {child.children.map((gauge) => (
                                         <Link

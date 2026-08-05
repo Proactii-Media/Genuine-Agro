@@ -39,13 +39,14 @@ export default function AboutSection() {
 
         {/* Description */}
         <p className="mt-6 max-w-3xl text-base leading-8 text-white/85 lg:text-lg">
-          Genuine Agro Shade Net is a trusted supplier of premium-quality
-          agricultural protection solutions in Vapi, Gujarat, offering a wide
-          range of Shade Nets and Shade Nets. We are committed to helping
-          farmers, nurseries, greenhouse operators, and agricultural businesses
-          improve crop protection, increase productivity, and create sustainable
-          growing environments. Our focus is on delivering durable products,
-          reliable service, and complete customer satisfaction.
+          Genuine Agro Shade Net is a trusted supplier of premium-quality Shade
+          Nets For Agricultural Protection Solutions , Commercial and Industrial
+          Applications in Vapi, Gujarat, offering a wide range of Shade Nets. We
+          are committed to helping farmers, nurseries, greenhouse operators, and
+          agricultural businesses improve crop protection, increase
+          productivity, and create sustainable growing environments. We focus on
+          Delivering High Quality Durable Shade Nets , Addressing a range of
+          needs Across Agriculture to Commercial Applications.
         </p>
 
         {/* Buttons */}

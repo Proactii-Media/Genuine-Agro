@@ -1,44 +1,26 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Check, Zap, Shield, Leaf, TrendingUp, Award } from "lucide-react";
+import { Zap, TrendingUp, Award } from "lucide-react";
 
 const WHY_CHOOSE_DATA = [
-  {
-    icon: Shield,
-    title: "Superior Quality",
-    description:
-      "Premium UV-stabilized materials engineered for maximum durability and protection",
-  },
   {
     icon: Zap,
     title: "Proven Performance",
     description:
-      "Trusted by 2500+ farmers with consistent, reliable results across seasons",
+      "Trusted by farmers and commercial partners across India with consistent, reliable quality and dependable performance.",
   },
   {
     icon: TrendingUp,
     title: "Increased Yield",
     description:
-      "Optimized design to enhance crop productivity and protect investments",
+      "Optimized and customer-specific shade solutions for various crops and environments to enhance crop productivity and protect your investment.",
   },
   {
     icon: Award,
     title: "Industry Leading",
     description:
-      "15+ years of excellence with ISO certification and quality guarantees",
-  },
-  {
-    icon: Leaf,
-    title: "Eco-Friendly",
-    description:
-      "Sustainable agricultural solutions that protect crops and the environment",
-  },
-  {
-    icon: Check,
-    title: "Best Value",
-    description:
-      "Competitive pricing without compromising on quality and performance",
+      "8+ years of experience in manufacturing and delivering high-grade shade nets for agriculture, industrial, and commercial applications.",
   },
 ];
 

@@ -89,6 +89,18 @@ const APPLICATIONS = [
     ],
   },
   {
+    title: "Outdoor Shade Net",
+    image: "/hero10.jpg",
+    details: [
+      "Perfect for Patios & Terraces",
+      "Suitable for Parking Areas",
+      "Blocks Harsh Sunlight",
+      "UV Protected HDPE",
+      "Strong & Durable",
+      "Easy Installation",
+    ],
+  },
+  {
     title: "Agriculture Net",
     image: "/agri1.jpg",
     details: [
