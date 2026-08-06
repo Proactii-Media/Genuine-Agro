@@ -29,8 +29,7 @@ export const products: Product[] = [
       "Premium UV-stabilized shade nets for nurseries, floriculture, and crop protection.",
     description:
       "Our signature shade nets are engineered with virgin HDPE monofilament yarn, offering superior light diffusion and UV protection. Available in multiple shade percentages from 30% to 90%, these nets create the ideal microclimate for sensitive crops, nurseries, and polyhouse applications.",
-    heroImage:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=85",
+    heroImage: "/agri.png",
     gallery: ["/tape-net.jpg", "/agri2.jpg", "/agri3.jpg"],
     benefits: [
       "Reduces heat stress on crops",
@@ -85,12 +84,11 @@ export const products: Product[] = [
       "Specialized nets for greenhouse and polyhouse applications.",
     description:
       "Designed specifically for controlled environment agriculture, our greenhouse nets optimize light transmission, humidity control, and temperature regulation for year-round crop production.",
-    heroImage:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=85",
+    heroImage: "/products/greenhouse-net1.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
-      "https://images.unsplash.com/photo-1574943320215-4d4bbb5090ea?w=800&q=80",
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
+      "/products/greenhouse-net1.jpg",
+      "/products/greenhouse-net2.jpg",
+      "/products/greenhouse-net3.jpg",
     ],
     benefits: [
       "Optimized light transmission",
@@ -139,13 +137,8 @@ export const products: Product[] = [
       "Heavy-duty safety nets for construction and industrial applications.",
     description:
       "Engineered to meet safety standards, our safety nets provide reliable fall protection for construction sites, scaffolding, and industrial environments. High tensile strength with certified load capacity.",
-    heroImage:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=85",
-    gallery: [
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d7?w=800&q=80",
-    ],
+    heroImage: "/safety.jpg",
+    gallery: ["/safety.jpg", "/safety2.jpg", "/safety3.jpg"],
     benefits: [
       "Certified load capacity",
       "High visibility options",
@@ -193,12 +186,11 @@ export const products: Product[] = [
       "Multi-purpose HDPE nets for diverse agricultural and industrial uses.",
     description:
       "Our general-purpose HDPE nets offer versatile protection for fencing, packaging, aquaculture, and general agricultural applications. Available in various mesh sizes and GSM weights.",
-    heroImage:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=85",
+    heroImage: "/products/nursery-net3.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d7?w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+      "/products/nursery-net3.jpg",
+      "/products/nursery-net2.jpg",
+      "/products/nursery-net1.jpg",
     ],
     benefits: [
       "Multi-purpose versatility",
