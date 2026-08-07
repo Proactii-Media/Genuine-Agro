@@ -255,7 +255,7 @@ export default function tapeNet75Page() {
                 ["Gauge", "6 Gauge"],
                 ["Width", "1 Meter - 6.2 Meter"],
                 ["Length", "50 Meter Roll as per Requirement"],
-                ["Colour", "Green / Black / White & order as per demand"],
+                ["Colour", "Green / Black / White as per order"],
                 ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
                 ["Minimum Order Quantity", "5000 Square Meter"],

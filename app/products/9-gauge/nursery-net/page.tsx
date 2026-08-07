@@ -13,11 +13,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const images = [
-  "/products/nursery.webp",
-  "/products/nursery-net2.webp",
-  "/products/nursery-net3.jpg",
-];
+const images = ["/products/nursery1.webp"];
 
 export default function NurseryShadeNetPage() {
   const [selectedImage, setSelectedImage] = useState(images[0]);

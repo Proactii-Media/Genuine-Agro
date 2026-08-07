@@ -13,11 +13,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const images = [
-  "/products/black-shade-net1.jpg",
-  "/products/black-shade-net2.jpg",
-  "/products/black-shade-net3.jpg",
-];
+const images = ["/products/black1.webp"];
 
 export default function BlackShadeNetPage() {
   const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -43,7 +39,7 @@ export default function BlackShadeNetPage() {
                   className="h-[420px] w-full object-cover transition-all duration-300"
                 />
               </div>
-              
+
               {/* Shade Badge */}
               <div className="absolute left-55 bottom-28 z-20">
                 <div className="rounded-2xl bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md">
@@ -270,7 +266,7 @@ export default function BlackShadeNetPage() {
                 ["Shade Percentage", "35%, 50%, 75%, 90%"],
                 ["UV Stabilized", "Yes"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter"],
+                ["Roll Length", "50 Meter as per Requirement"],
                 ["Mesh Type", "Knitted"],
                 ["Weather Resistance", "Excellent"],
                 ["Water Resistance", "Yes"],

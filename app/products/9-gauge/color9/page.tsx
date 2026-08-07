@@ -14,12 +14,12 @@ import {
 import { useState } from "react";
 
 const images = [
-  "/products/red.avif",
-  "/products/blue.png",
+  "/products/red9.jpg",
+  "/products/blue9.jpg",
   "/products/black.webp",
-  "/products/white.avif",
-  "/products/beige.avif",
-  "/products/camel.webp",
+  "/products/white9.jpg",
+  "/products/camel9.jpg",
+  "/products/beige9.png",
 ];
 
 export default function ColorShadeNetPage9() {
@@ -93,12 +93,12 @@ export default function ColorShadeNetPage9() {
 
                 <div className="grid grid-cols-3 gap-4">
                   {[
-                    { name: "Red", color: "#D62828" },
                     { name: "Blue", color: "#2563EB" },
-                    { name: "Black", color: "#1F2937" },
+                    { name: "Red", color: "#D62828" },
                     { name: "White", color: "#FFFFFF", border: true },
-                    { name: "Beige", color: "#D8C3A5" },
+                    { name: "Black", color: "#1F2937" },
                     { name: "Camel", color: "#C19A6B" },
+                    { name: "Beige", color: "#D8C3A5" },
                   ].map((item) => (
                     <div key={item.name} className="flex flex-col items-center">
                       <div
@@ -172,7 +172,7 @@ export default function ColorShadeNetPage9() {
                   ["Material", "100% Virgin HDPE"],
                   [
                     "Available Colors",
-                    "Red, Blue, Black, White, Beige & Camel",
+                    "Blue, Red, White, Black, Camel & Beige (custom colors on demand)",
                   ],
                   ["Shade Percentage", "35% - 90%"],
                   ["UV Protection", "Premium UV Stabilized"],
@@ -311,8 +311,11 @@ export default function ColorShadeNetPage9() {
                 ["Product Name", "Color Shade Net"],
                 ["Product Type", "Single Color Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Manufacturing Process", "Knitted Monofilament Technology"],
-                ["Available Colors", "Red, Blue, Black, White, Beige & Camel"],
+                ["Manufacturing Process", "Warp Knitted Technology"],
+                [
+                  "Available Colors",
+                  "Blue, Red, White, Black, Camel & Beige (custom colors on demand)",
+                ],
                 ["Shade Percentage", "35%, 50%, 75% & 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
                 ["Roll Length", "50 Meter Roll"],

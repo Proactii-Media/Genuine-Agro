@@ -172,7 +172,7 @@ export default function ColorShadeNetPage() {
                   ["Material", "100% Virgin HDPE"],
                   [
                     "Available Colors",
-                    "Red, Blue, Black, White, Beige & Camel (even custom colors on demand)",
+                    "Red, Blue, Black, White, Beige & Camel (custom colors on demand)",
                   ],
                   ["Shade Percentage", "35% - 90%"],
                   ["UV Protection", "Premium UV Stabilized"],
@@ -311,10 +311,10 @@ export default function ColorShadeNetPage() {
                 ["Product Name", "Color Shade Net"],
                 ["Product Type", "Single Color Shade Net"],
                 ["Material", "100% Virgin HDPE"],
-                ["Manufacturing Process", "Knitted Monofilament Technology"],
+                ["Manufacturing Process", "Warp Knitted Technology"],
                 [
                   "Available Colors",
-                  "Red, Blue, Black, White, Beige & Camel (even custom colors on demand)",
+                  "Red, Blue, Black, White, Beige & Camel (custom colors on demand)",
                 ],
                 ["Shade Percentage", "35%, 50%, 75% & 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],

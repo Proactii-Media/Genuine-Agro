@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const APPLICATIONS = [
   {
-    title: "Nursery Net",
+    title: "Nursery Shade Net",
     image: "/agri4.png",
     details: [
       "Healthy seedling growth",
@@ -18,7 +18,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Greenhouse Net",
+    title: "Greenhouse Shade Net",
     image: "/products/greenhouse-net1.jpg",
     details: [
       "Temperature Control",
@@ -54,7 +54,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Polyhouse",
+    title: "Polyhouse Shade Net",
     image: "/products/greenhouse-net2.jpg",
     details: [
       "Suitable for Polyhouse",
@@ -78,7 +78,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Event Nets",
+    title: "Event ShadeNets",
     image: "/products/events.jpg",
     details: [
       "Decorative Shade Solution",
@@ -102,7 +102,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Agriculture Net",
+    title: "Agriculture ShadeNet",
     image: "/agri1.jpg",
     details: [
       "Crop Protection",
@@ -114,7 +114,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Construction Net",
+    title: "Construction Shade Net",
     image: "/constrution.png",
     details: [
       "High Strength Material",
@@ -126,7 +126,7 @@ const APPLICATIONS = [
     ],
   },
   {
-    title: "Safety Net",
+    title: "Safety Shade Net",
     image: "/safety.jpg",
     details: [
       "High Impact Resistance",

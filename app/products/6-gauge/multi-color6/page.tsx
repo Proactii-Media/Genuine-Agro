@@ -128,7 +128,7 @@ export default function MultiColorShadeNetPage() {
                   ["Material", "100% Virgin HDPE"],
                   [
                     "Colors",
-                    "Multiple Color Comnbinations & Custom Color Combinations on demand",
+                    "Multiple Color Combinations & Custom Color Combinations on demand",
                   ],
                   ["UV Protection", "Premium UV Stabilized"],
                   ["Width", "1m - 6.2m"],

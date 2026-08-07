@@ -16,7 +16,6 @@ import { useState } from "react";
 const images = [
   "/products/greenhouse-net1.jpg",
   "/products/greenhouse-net2.jpg",
-  "/products/greenhouse-net3.jpg",
 ];
 
 export default function GreenhouseShadeNetPage() {
