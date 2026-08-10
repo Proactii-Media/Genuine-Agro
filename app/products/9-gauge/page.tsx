@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const variants = [
   {
     title: "Black Shade Net",
-    image: "/products/black-tape-net1.jpg",
+    image: "/products/black.webp",
     href: "/products/tape-nets/black",
     description:
       "Premium UV Stabilized HDPE Black Shade Net offering excellent heat reduction, crop protection and long-lasting outdoor durability.",

@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export function formatWhatsAppUrl(message: string, phone?: string) {
   const number =
-    phone ?? process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "919876543210";
+    phone ?? process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "918905301528";
   const clean = number.replace(/\D/g, "");
   return `https://wa.me/${clean}?text=${encodeURIComponent(message)}`;
 }

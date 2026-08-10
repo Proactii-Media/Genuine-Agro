@@ -6,7 +6,7 @@ import { formatWhatsAppUrl } from "@/lib/utils";
 
 export default function WhatsAppFloat() {
   const whatsappUrl = formatWhatsAppUrl(
-    `Hello ${company.name}, I would like to enquire about your agricultural shade net products.`
+    `Hello ${company.name}, I would like to enquire about your shade net products.`,
   );
 
   return (

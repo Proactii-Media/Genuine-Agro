@@ -16,7 +16,7 @@ const products = [
         href: "/products/6-gauge",
         children: [
           {
-            name: "50% 6 gauge Shade Net",
+            name: "50% 6 Gauge Shade Net",
             href: "/products/6-gauge/50-percent",
           },
           {
@@ -24,7 +24,7 @@ const products = [
             href: "/products/6-gauge/75-percent",
           },
           {
-            name: "90% 6 GaugeShade Net",
+            name: "90% 6 Gauge Shade Net",
             href: "/products/6-gauge/90-percent",
           },
           {
@@ -42,15 +42,15 @@ const products = [
         href: "/products/9-gauge",
         children: [
           {
-            name: "50% 9 Gauge Black Shade Net",
+            name: "50% 9 Gauge Shade Net",
             href: "/products/9-gauge/black-shade-net",
           },
           {
-            name: "75% 9 Gauge Greenhouse Shade Net ",
+            name: "75% 9 Gauge Shade Net ",
             href: "/products/9-gauge/greenhouse-shade-net",
           },
           {
-            name: "90% 9 Gauge Nursery Net",
+            name: "90% 9 Gauge Shade Net",
             href: "/products/9-gauge/nursery-net",
           },
           {

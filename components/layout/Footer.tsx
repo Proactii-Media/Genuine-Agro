@@ -18,14 +18,14 @@ export default function Footer() {
           {/* Brand Column - Spans 2 columns on lg */}
           <div className="lg:col-span-2 space-y-6">
             <Link href="/" className="inline-block">
-              <div className="rounded-2xl bg-white p-5 shadow-2xl">
+              <div className="w-fit h-35 overflow-hidden rounded-2xl bg-white shadow-2xl">
                 <Image
                   src="/AgroLogo.png"
                   alt={company.name}
                   width={700}
                   height={280}
                   priority
-                  className="h-36 w-auto object-contain"
+                  className="h-52 w-[350px] scale-[1.5] object-contain"
                 />
               </div>
             </Link>
