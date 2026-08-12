@@ -266,7 +266,7 @@ export default function BlackShadeNetPage() {
                 ["Shade Percentage", "35%, 50%, 75%, 90%"],
                 ["UV Stabilized", "Yes"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter as per Requirement"],
+                ["Roll Length", "50 Meter or as per Requirement"],
                 ["Mesh Type", "Knitted"],
                 ["Weather Resistance", "Excellent"],
                 ["Water Resistance", "Yes"],

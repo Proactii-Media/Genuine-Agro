@@ -260,7 +260,7 @@ export default function MultiColorShadeNetPage() {
                 ],
                 ["Shade Percentage", "35% - 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Length", "50 Meter Roll as per Requirement"],
+                ["Length", "50 Meter Roll or as per Requirement"],
                 ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
                 [

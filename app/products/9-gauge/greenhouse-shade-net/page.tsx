@@ -272,7 +272,7 @@ export default function GreenhouseShadeNetPage() {
                 ["UV Stabilized", "Yes"],
                 ["Knitting Type", "Warp Knitted"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter as per Requirements"],
+                ["Roll Length", "50 Meter or as per Requirements"],
                 ["Temperature Reduction", "Excellent"],
                 ["Weather Resistance", "Excellent"],
                 ["Application", "Greenhouses & Polyhouses"],

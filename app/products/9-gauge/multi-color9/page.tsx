@@ -260,7 +260,7 @@ export default function MultiColorShadeNetPage() {
                 ],
                 ["Shade Percentage", "35% - 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Length", "50 Meter Roll"],
+                ["Length", "50 Meter Roll or as per requirement"],
                 ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],
                 [
@@ -314,7 +314,7 @@ export default function MultiColorShadeNetPage() {
                 </Link>
 
                 <a
-                  href="tel:+919999999999"
+                  href="tel:+918905301528"
                   className="rounded-2xl border-2 border-white px-8 py-4 font-semibold transition hover:bg-white hover:text-[#072B18]"
                 >
                   Request Call

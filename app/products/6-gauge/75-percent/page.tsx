@@ -254,7 +254,7 @@ export default function tapeNet75Page() {
                 ["Shade Percentage", "75%"],
                 ["Gauge", "6 Gauge"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Length", "50 Meter Roll oras per Requirement"],
+                ["Length", "50 Meter Roll or as per Requirement"],
                 ["Colour", "Green / Black / White or as per order"],
                 ["UV Stabilized", "Yes"],
                 ["Business Type", "Manufacturer & Exporter"],

@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-[#16331d]">Phone</h3>
 
-                    <p className="mt-1 text-gray-600">+91 98765 43210</p>
+                    <p className="mt-1 text-gray-600">+91 8905301528</p>
                   </div>
                 </div>
 
@@ -116,7 +116,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-[#16331d]">Email</h3>
 
-                    <p className="mt-1 text-gray-600">info@genuineagro.com</p>
+                    <p className="mt-1 text-gray-600">
+                      genuine.agronet@gmail.com
+                    </p>
                   </div>
                 </div>
 

@@ -318,7 +318,7 @@ export default function ColorShadeNetPage() {
                 ],
                 ["Shade Percentage", "35%, 50%, 75% & 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter Roll as per Requirement"],
+                ["Roll Length", "50 Meter Roll or as per Requirement"],
                 ["UV Stabilized", "Yes"],
                 ["Weather Resistance", "Excellent"],
                 ["Air Permeability", "High"],

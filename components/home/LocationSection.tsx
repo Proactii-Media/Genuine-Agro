@@ -43,10 +43,10 @@ export default function ContactMapSection() {
                 <div>
                   <p className="font-semibold text-gray-900">Call Us</p>
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+918905301528"
                     className="text-gray-600 hover:text-[#a4cc2e]"
                   >
-                    +91 99999 99999
+                    +91 8905301528
                   </a>
                 </div>
               </div>
@@ -59,10 +59,10 @@ export default function ContactMapSection() {
                 <div>
                   <p className="font-semibold text-gray-900">Email</p>
                   <a
-                    href="mailto:info@genuineagro.com"
+                    href="mailto:genuine.agronet@gmail.com"
                     className="text-gray-600 hover:text-[#a4cc2e]"
                   >
-                    info@genuineagro.com
+                    genuine.agronet@gmail.com
                   </a>
                 </div>
               </div>

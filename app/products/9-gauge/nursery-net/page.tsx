@@ -267,7 +267,7 @@ export default function NurseryShadeNetPage() {
                 ["UV Stabilized", "Yes"],
                 ["Knitting Type", "Warp Knitted"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter as per Requirement"],
+                ["Roll Length", "50 Meter or as per Requirement"],
                 ["Weather Resistance", "Excellent"],
                 ["Application", "Plant Nurseries & Horticulture"],
                 ["Business Type", "Manufacturer & Exporter"],

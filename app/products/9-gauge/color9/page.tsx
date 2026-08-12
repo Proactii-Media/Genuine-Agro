@@ -177,7 +177,7 @@ export default function ColorShadeNetPage9() {
                   ["Shade Percentage", "35% - 90%"],
                   ["UV Protection", "Premium UV Stabilized"],
                   ["Width", "1m - 6.2m"],
-                  ["Length", "50 Meter Roll"],
+                  ["Length", "50 Meter Roll or as per requirement"],
                 ].map(([title, value]) => (
                   <div
                     key={title}
@@ -318,7 +318,7 @@ export default function ColorShadeNetPage9() {
                 ],
                 ["Shade Percentage", "35%, 50%, 75% & 90%"],
                 ["Width", "1 Meter - 6.2 Meter"],
-                ["Roll Length", "50 Meter Roll"],
+                ["Roll Length", "50 Meter Roll or as per requirement"],
                 ["UV Stabilized", "Yes"],
                 ["Weather Resistance", "Excellent"],
                 ["Air Permeability", "High"],
@@ -440,7 +440,7 @@ export default function ColorShadeNetPage9() {
               {
                 title: "Multi-Color Shade Net",
                 href: "/products/tape-nets/multi-color",
-                image: "/products/multi-color-shade-net1.jpeg",
+                image: "/products/multi-color9.jpeg",
               },
             ].map((item) => (
               <Link
