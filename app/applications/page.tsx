@@ -262,7 +262,7 @@ export default function ApplicationsPage() {
                 title: "Stabilized",
               },
               {
-                number: "10+",
+                number: "3+",
                 title: "Years Durability",
               },
             ].map((item) => (
